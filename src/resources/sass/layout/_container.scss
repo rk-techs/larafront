@@ -1,0 +1,11 @@
+@use '../global' as *;
+
+.container {
+    margin: 0 auto;
+    padding: 24px 4%;
+
+    @include pc-screen() {
+        max-width: 960px;
+        padding: 24px;
+    }
+}

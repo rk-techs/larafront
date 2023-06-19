@@ -1,0 +1,10 @@
+@use '../global' as *;
+
+.page-main {
+    background-color: var(--main-color);
+    color: var(--black);
+
+    @include pc-screen() {}
+
+    .main-container {}
+}

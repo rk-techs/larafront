@@ -5,7 +5,9 @@ HOME | {{ config('app.name') }}
 @endsection
 
 @section('content')
-<main>
-    メイン
+<main class="page-main">
+    <div class="container main-container">
+        メイン
+    </div>
 </main>
 @endsection
