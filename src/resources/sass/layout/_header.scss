@@ -4,7 +4,65 @@
     background-color: var(--header-color);
     color: var(--white);
 
-    @include pc-screen() {}
+    .header-container {
+        display: flex;
+        align-items: center;
 
-    .header-container {}
+        .header-title {
+            margin-right: 16px;
+
+            .link {
+                color: inherit;
+                font-size: 1.3rem;
+                font-weight: bold;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+
+        .header-nav {
+            display: none;
+
+            @include pc-screen() {
+                align-items: center;
+                display: flex;
+            }
+
+            .nav-item {
+
+                .nav-link {
+                    color: inherit;
+                    display: block;
+                    font-weight: bold;
+                    margin-right: 8px;
+                    padding: 8px;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+
+        .header-btn {
+            display: none;
+
+            @include pc-screen() {
+                align-items: center;
+                display: flex;
+                margin-left: auto;
+            }
+        }
+
+
+        .mobile-menu {
+            margin-left: auto;
+            @include pc-screen() {
+                display: none;
+            }
+        }
+
+    }
 }
