@@ -1,5 +1,14 @@
 @use '../global' as *;
 
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+
+  .btn {
+    margin: 4px;
+  }
+}
+
 .btn {
   background-color: var(--gray);
   border-radius: 4px;
@@ -7,7 +16,6 @@
   cursor: pointer;
   display: inline-block;
   padding: 4px 16px;
-  margin-bottom: 8px;
   text-align: center;
 
   &:hover {
