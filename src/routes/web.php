@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::view('/alert', 'components.templates.alert');
+Route::view('/button', 'components.templates.button');
+Route::view('/headding', 'components.templates.headding');
+Route::view('/form', 'components.templates.form');
+Route::view('/list', 'components.templates.list');
+Route::view('/table', 'components.templates.table');

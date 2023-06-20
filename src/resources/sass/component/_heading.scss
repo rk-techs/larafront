@@ -1,0 +1,56 @@
+@use '../global' as *;
+
+.title {
+  color: var(--black);
+  font-weight: bold;
+
+  &.title-h1 {
+    font-size: 1.8rem;
+  }
+
+  &.title-h2 {
+    font-size: 1.6rem;
+  }
+
+  &.title-h3 {
+    font-size: 1.4rem;
+  }
+
+  &.title-h4 {
+    font-size: 1.2rem;
+  }
+
+  &.title-h5 {
+    font-size: 1rem;
+  }
+
+  &.title-h6 {
+    font-size: 1rem;
+  }
+
+  @include pc-screen() {
+    &.title-h1 {
+      font-size: 2rem;
+    }
+
+    &.title-h2 {
+      font-size: 1.8rem;
+    }
+
+    &.title-h3 {
+      font-size: 1.6rem;
+    }
+
+    &.title-h4 {
+      font-size: 1.4rem;
+    }
+
+    &.title-h5 {
+      font-size: 1.1rem;
+    }
+
+    &.title-h6 {
+      font-size: 1.1rem;
+    }
+  }
+}

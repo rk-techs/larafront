@@ -1,0 +1,30 @@
+@use '../global' as *;
+
+.table {
+  --table-header-bg-color: #f8f9fa;
+  --table-header-border-color: #e9ecef;
+  --table-row-border-color: #e9ecef;
+
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-header {
+  background-color: var(--table-header-bg-color);
+}
+
+.table-header .header-cell {
+  border-bottom: 2px solid var(--table-header-border-color);
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.table-body .table-row {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--table-row-border-color);
+}
+
+.table-cell {
+  padding: 1rem;
+  text-align: left;
+}

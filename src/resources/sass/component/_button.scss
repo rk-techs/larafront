@@ -1,0 +1,61 @@
+@use '../global' as *;
+
+.btn {
+  background-color: var(--gray);
+  border-radius: 4px;
+  color: var(--white);
+  cursor: pointer;
+  display: inline-block;
+  padding: 4px 16px;
+  margin-bottom: 8px;
+  text-align: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &.btn-create {
+    background-color: var(--create-color);
+  }
+
+  &.btn-store {
+    background-color: var(--store-color);
+  }
+
+  &.btn-edit {
+    background-color: var(--edit-color);
+  }
+
+  &.btn-update {
+    background-color: var(--update-color);
+  }
+
+  &.btn-delete {
+    background-color: var(--delete-color);
+  }
+
+  &.btn-search {
+    background-color: var(--search-color);
+  }
+
+  &.btn-submit {
+    background-color: var(--submit-color);
+  }
+
+  &.btn-info {
+    background-color: var(--info-color);
+  }
+
+  &.btn-index {
+    background-color: var(--index-color);
+  }
+
+  &.btn-back {
+    background-color: var(--back-color);
+  }
+
+  &.btn-cancel {
+    background-color: var(--cancel-color);
+  }
+
+}

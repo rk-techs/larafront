@@ -1,0 +1,70 @@
+@use '../global' as *;
+
+:root {
+  --input-bg-color: #f5f5f5;
+  --input-border-color: #e3e3e3;
+  --input-txt-color: #333333;
+  --input-focus-border-color: #86b4ff;
+  --error-msg-color: #d8000c;
+}
+
+.form-group {
+  margin-bottom: 16px;
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .required {
+    font-weight: bold;
+    color: var(--error-msg-color);
+    margin-left: 4px;
+  }
+
+  .input-field {
+    background-color: var(--input-bg-color);
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: var(--input-txt-color);
+    display: block;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .input-field[type="checkbox"],
+  .input-field[type="radio"] {
+    display: inline-block;
+    width: auto;
+  }
+
+  .input-field:focus {
+    border-color: var(--input-focus-border-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(134, 180, 255, 0.5);
+  }
+
+  .validation-msg {
+    color: var(--error-msg-color);
+    font-size: 14px;
+    height: 20px;
+    margin-top: 5px;
+  }
+
+  .btn {
+    background-color: var(--input-txt-color);
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+
+    &.btn:hover {
+      background-color: #4d4d4d;
+    }
+  }
+}

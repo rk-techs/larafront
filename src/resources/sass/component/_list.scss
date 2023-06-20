@@ -1,0 +1,13 @@
+@use '../global' as *;
+
+.link {
+  background-color: var(--link-bg-color);
+  color: var(--link-color);
+  display: block;
+  padding: 8px;
+}
+
+.link:hover {
+  color: var(--link-hover-color);
+  opacity: 0.8;
+}
