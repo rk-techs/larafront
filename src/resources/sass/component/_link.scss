@@ -1,0 +1,24 @@
+@use '../global' as *;
+
+
+.link {
+  color: inherit;
+  display: inline-block;
+
+  &:hover {
+    color: var(--link-hover-color);
+  }
+}
+
+// Block style link
+.b-link {
+  background-color: #ccc;
+  color: inherit;
+  display: block;
+  margin: 8px 0;
+  padding: 8px 0;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
