@@ -23,3 +23,4 @@ Route::view('/headding', 'components.templates.headding');
 Route::view('/form', 'components.templates.form');
 Route::view('/list', 'components.templates.list');
 Route::view('/table', 'components.templates.table');
+Route::view('/icon', 'components.templates.icon');
