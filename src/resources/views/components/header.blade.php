@@ -1,5 +1,5 @@
 <header class="page-header">
-    <div class="container header-container">
+    <div class="container-full header-container">
         <div class="header-title">
             <a href="/" class="link">larafront</a>
         </div>
