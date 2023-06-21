@@ -62,7 +62,41 @@
             @include pc-screen() {
                 display: none;
             }
+
+            .material-symbols-outlined {
+                display: block;
+                font-size: 2rem;
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    .header-collapse {
+        display: none;
+        &.visible {
+            display: block;
+            @include pc-screen() {
+                display: none;
+            }
         }
 
+        .header-nav {
+            .nav-item {
+                border-bottom: 1px solid #fff;
+                .nav-link {
+                    color: inherit;
+                    display: block;
+                    font-weight: bold;
+                    padding: 8px;
+
+                    &:hover {
+                        background-color: #397abed3;
+                    }
+                }
+            }
+        }
     }
 }
