@@ -1,102 +1,107 @@
 @use '../global' as *;
 
 .page-header {
-    background-color: var(--header-color);
-    color: var(--white);
+  background-color: var(--header-color);
+  color: var(--white);
 
-    .header-container {
-        display: flex;
+  .header-container {
+    display: flex;
+    align-items: center;
+
+    .header-title {
+      margin-right: 16px;
+
+      .link {
+        color: inherit;
+        font-size: 1.3rem;
+        font-weight: bold;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .header-nav {
+      display: none;
+
+      @include pc-screen() {
         align-items: center;
+        display: flex;
+      }
 
-        .header-title {
-            margin-right: 16px;
+      .nav-item {
 
-            .link {
-                color: inherit;
-                font-size: 1.3rem;
-                font-weight: bold;
+        .nav-link {
+          color: inherit;
+          display: block;
+          font-weight: bold;
+          margin-right: 8px;
+          padding: 8px;
 
-                &:hover {
-                    opacity: 0.8;
-                }
-            }
+          &:hover {
+            opacity: 0.8;
+          }
         }
-
-        .header-nav {
-            display: none;
-
-            @include pc-screen() {
-                align-items: center;
-                display: flex;
-            }
-
-            .nav-item {
-
-                .nav-link {
-                    color: inherit;
-                    display: block;
-                    font-weight: bold;
-                    margin-right: 8px;
-                    padding: 8px;
-
-                    &:hover {
-                        opacity: 0.8;
-                    }
-                }
-            }
-        }
-
-        .header-btn {
-            display: none;
-
-            @include pc-screen() {
-                align-items: center;
-                display: flex;
-                margin-left: auto;
-            }
-        }
-
-
-        .mobile-menu {
-            margin-left: auto;
-            @include pc-screen() {
-                display: none;
-            }
-
-            .material-symbols-outlined {
-                display: block;
-                font-size: 2rem;
-                &:hover {
-                    cursor: pointer;
-                    opacity: 0.8;
-                }
-            }
-        }
+      }
     }
 
-    .header-collapse {
+    .header-btn {
+      display: none;
+
+      @include pc-screen() {
+        align-items: center;
+        display: flex;
+        margin-left: auto;
+      }
+    }
+
+
+    .mobile-menu {
+      margin-left: auto;
+
+      @include pc-screen() {
         display: none;
-        &.visible {
-            display: block;
-            @include pc-screen() {
-                display: none;
-            }
-        }
+      }
 
-        .header-nav {
-            .nav-item {
-                border-bottom: 1px solid #fff;
-                .nav-link {
-                    color: inherit;
-                    display: block;
-                    font-weight: bold;
-                    padding: 8px;
+      .material-symbols-outlined {
+        display: block;
+        font-size: 2rem;
 
-                    &:hover {
-                        background-color: #397abed3;
-                    }
-                }
-            }
+        &:hover {
+          cursor: pointer;
+          opacity: 0.8;
         }
+      }
     }
+  }
+
+  .header-collapse {
+    display: none;
+
+    &.visible {
+      display: block;
+
+      @include pc-screen() {
+        display: none;
+      }
+    }
+
+    .header-nav {
+      .nav-item {
+        border-bottom: 1px solid #fff;
+
+        .nav-link {
+          color: inherit;
+          display: block;
+          font-weight: bold;
+          padding: 8px;
+
+          &:hover {
+            background-color: #397abed3;
+          }
+        }
+      }
+    }
+  }
 }

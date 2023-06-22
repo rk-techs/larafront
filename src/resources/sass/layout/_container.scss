@@ -4,40 +4,40 @@ $mobile-padding: 16px 4%;
 $pc-padding: 8px 24px;
 
 .container {
-    margin: 0 auto;
-    padding: $mobile-padding;
+  margin: 0 auto;
+  padding: $mobile-padding;
 
-    @include pc-screen() {
-        max-width: 960px;
-        padding: $pc-padding;
-    }
+  @include pc-screen() {
+    max-width: 960px;
+    padding: $pc-padding;
+  }
 }
 
 .container-m {
-    margin: 0 auto;
-    padding: $mobile-padding;
+  margin: 0 auto;
+  padding: $mobile-padding;
 
-    @include pc-screen() {
-        max-width: 1200px;
-        padding: $pc-padding;
-    }
+  @include pc-screen() {
+    max-width: 1200px;
+    padding: $pc-padding;
+  }
 }
 
 .container-l {
-    margin: 0 auto;
-    padding: $mobile-padding;
+  margin: 0 auto;
+  padding: $mobile-padding;
 
-    @include pc-screen() {
-        max-width: 1400px;
-        padding: $pc-padding;
-    }
+  @include pc-screen() {
+    max-width: 1400px;
+    padding: $pc-padding;
+  }
 }
 
 .container-full {
-    margin: 0 auto;
-    padding: $mobile-padding;
+  margin: 0 auto;
+  padding: $mobile-padding;
 
-    @include pc-screen() {
-        padding: $pc-padding;
-    }
+  @include pc-screen() {
+    padding: $pc-padding;
+  }
 }

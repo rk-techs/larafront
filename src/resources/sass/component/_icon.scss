@@ -5,26 +5,26 @@
   margin-right: 8px;
 
   .icon-link {
-      align-items: center;
-      color: inherit;
+    align-items: center;
+    color: inherit;
+    display: flex;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    .icon {
       display: flex;
+      align-items: center;
+      margin-right: 8px;
+    }
 
-      &:hover {
-        opacity: 0.8;
-      }
+    .icon-label {
+      margin-right: 8px;
+    }
 
-      .icon {
-          display: flex;
-          align-items: center;
-          margin-right: 8px;
-      }
-
-      .icon-label {
-          margin-right: 8px;
-      }
-
-      .material-symbols-outlined {
-          // 必要に応じてアイコンのスタイルを調整
-      }
+    .material-symbols-outlined {
+      // 必要に応じてアイコンのスタイルを調整
+    }
   }
 }

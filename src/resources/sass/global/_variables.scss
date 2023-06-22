@@ -1,59 +1,59 @@
 :root {
-    /* Colors */
-    /* Basic Colors */
-    --black: #333;
-    --white: #fff;
-    --red: #ff0000;
-    --blue: #0000ff;
-    --green: #00ff00;
-    --yellow: #ffff00;
-    --orange: #ffA500;
-    --purple: #800080;
-    --pink: #ff69b4;
-    --gray: #808080;
-    
-    --primary: #007bff;
-    --secondary: #6c757d;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --link: #007bff;
+  /* Colors */
+  /* Basic Colors */
+  --black: #333;
+  --white: #fff;
+  --red: #ff0000;
+  --blue: #0000ff;
+  --green: #00ff00;
+  --yellow: #ffff00;
+  --orange: #ffA500;
+  --purple: #800080;
+  --pink: #ff69b4;
+  --gray: #808080;
 
-    /* Links */
-    --link-color: #333;
-    --link-bg-color: #ddd;
-    --link-hover-color: blue;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --link: #007bff;
 
-    /* Layouts */
-    --footer-color: #bdc3c7;
-    --header-color: #2c3e50;
-    --main-color: #ecf0f1;
+  /* Links */
+  --link-color: #333;
+  --link-bg-color: #ddd;
+  --link-hover-color: blue;
 
-    /* Buttons */
-    --create-color: #2ecc71;
-    --store-color: #27ae60;
-    --edit-color: #3498db;
-    --update-color: #2980b9;
-    --delete-color: #e74c3c;
-    --search-color: #1abc9c;
-    --submit-color: #2c3e50;
-    --info-color: #2c3e50;
-    --index-color: #2c3e50;
-    --back-color: #95a5a6;
-    --cancel-color: #7f8c8d;
+  /* Layouts */
+  --footer-color: #bdc3c7;
+  --header-color: #2c3e50;
+  --main-color: #ecf0f1;
 
-    /* Alerts */
-    --stored-bg-color: #a2f2d2;
-    --updated-bg-color: #a1d6f5;
-    --deleted-bg-color: #f6a6a2;
-    --error-bg-color: #f6a6a2;
-    --warning-bg-color: #f9e79f;
-    --stored-txt-color: #087830;
-    --updated-txt-color: #084d79;
-    --deleted-txt-color: #7a1c1c;
-    --error-txt-color: #7a1c1c;
-    --warning-txt-color: #7a650c;
+  /* Buttons */
+  --create-color: #2ecc71;
+  --store-color: #27ae60;
+  --edit-color: #3498db;
+  --update-color: #2980b9;
+  --delete-color: #e74c3c;
+  --search-color: #1abc9c;
+  --submit-color: #2c3e50;
+  --info-color: #2c3e50;
+  --index-color: #2c3e50;
+  --back-color: #95a5a6;
+  --cancel-color: #7f8c8d;
+
+  /* Alerts */
+  --stored-bg-color: #a2f2d2;
+  --updated-bg-color: #a1d6f5;
+  --deleted-bg-color: #f6a6a2;
+  --error-bg-color: #f6a6a2;
+  --warning-bg-color: #f9e79f;
+  --stored-txt-color: #087830;
+  --updated-txt-color: #084d79;
+  --deleted-txt-color: #7a1c1c;
+  --error-txt-color: #7a1c1c;
+  --warning-txt-color: #7a650c;
 }
