@@ -5,8 +5,14 @@
   color: var(--white);
 
   .header-container {
-    display: flex;
     align-items: center;
+    display: flex;
+    padding: 16px var(--sp-page-padding-x);
+
+    @include pc-screen() {
+      padding: 16px var(--pc-page-padding-x);
+      max-width: 100%;
+    }
 
     .header-title {
       margin-right: 16px;
@@ -81,6 +87,7 @@
 
     &.visible {
       display: block;
+      padding: 0 24px 24px 24px;
 
       @include pc-screen() {
         display: none;
