@@ -1,7 +1,7 @@
 <header class="page-header">
     <div class="header-container">
         <div class="header-title">
-            <a href="/" class="link">larafront</a>
+            <a href="/" class="title-link">larafront</a>
         </div>
         <div class="header-nav">
             <div class="nav-item"><a href="" class="nav-link">メニュー1</a></div>
@@ -17,7 +17,7 @@
     </div>
 
     {{-- Collapse Menu on Mobile --}}
-    <div id="collapseNav" class="header-collapse">
+    <div id="collapseNav" class="header-collapse-container">
         <div class="header-nav">
             <div class="nav-item"><a href="" class="nav-link">メニュー1</a></div>
             <div class="nav-item"><a href="" class="nav-link">メニュー2</a></div>
