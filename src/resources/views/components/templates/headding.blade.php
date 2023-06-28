@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    headding | {{ config('app.name') }}
+    heading | {{ config('app.name') }}
 @endsection
 
 @section('content')
