@@ -1,24 +1,47 @@
 @extends('layouts.app')
 
 @section('title')
-HOME | {{ config('app.name') }}
+    HOME | {{ config('app.name') }}
 @endsection
 
 @section('content')
-<main class="page-main">
-    <div class="main-container">
+<main class="page-home">
+    <div class="home-container">
 
-        <ul class="list">
-            <li class="list-item"><a href="alert" class="b-link">alert</a></li>
-            <li class="list-item"><a href="button" class="b-link">button</a></li>
-            <li class="list-item"><a href="form" class="b-link">form</a></li>
-            <li class="list-item"><a href="headding" class="b-link">headding</a></li>
-            <li class="list-item"><a href="list" class="b-link">list</a></li>
-            <li class="list-item"><a href="link" class="b-link">link</a></li>
-            <li class="list-item"><a href="icon" class="b-link">icon</a></li>
-            <li class="list-item"><a href="table" class="b-link">table</a></li>
-        </ul>
+        <div class="title page-title">
+            Menu
+        </div>
 
+        <div class="menu-list">
+            <div class="menu-item">
+                <a href="/" class="menu-link">HOME</a>
+            </div>
+            <div class="menu-item">
+                <a href="alert" class="menu-link">Alert</a>
+            </div>
+            <div class="menu-item">
+                <a href="button" class="menu-link">Button</a>
+            </div>
+            <div class="menu-item">
+                <a href="form" class="menu-link">Form</a>
+            </div>
+            <div class="menu-item">
+                <a href="heading" class="menu-link">Heading</a>
+            </div>
+            <div class="menu-item">
+                <a href="list" class="menu-link">List</a>
+            </div>
+            <div class="menu-item">
+                <a href="link" class="menu-link">Link</a>
+            </div>
+            <div class="menu-item">
+                <a href="icon" class="menu-link">Icon</a>
+            </div>
+            <div class="menu-item">
+                <a href="table" class="menu-link">Table</a>
+            </div>
+        </div>
+        
     </div>
 </main>
 @endsection
