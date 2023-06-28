@@ -6,7 +6,7 @@ HOME | {{ config('app.name') }}
 
 @section('content')
 <main class="page-main">
-    <div class="container main-container">
+    <div class="main-container">
 
         <ul class="list">
             <li class="list-item"><a href="alert" class="b-link">alert</a></li>
