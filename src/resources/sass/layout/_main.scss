@@ -1,7 +1,7 @@
 @use '../global' as *;
 
-$mobile-padding: 16px 4%;
-$pc-padding: 8px 24px;
+$mobile-padding: 24px 4%;
+$pc-padding: 24px;
 
 .page-main {
   background-color: var(--main-color);
@@ -13,7 +13,6 @@ $pc-padding: 8px 24px;
     padding: $mobile-padding;
 
     @include pc-screen() {
-      max-width: 960px;
       padding: $pc-padding;
     }
   }
