@@ -7,6 +7,11 @@
 @section('content')
     <main class="page-main">
         <div class="main-container">
+
+            <div class="title page-title">
+                Menu
+            </div>
+            
             <h1 class="title title-h1">タイトル</h1>
             <p>本文</p>
             <h2 class="title title-h2">タイトル</h2>

@@ -8,6 +8,10 @@
     <main class="page-main">
         <div class="main-container">
 
+            <div class="title page-title">
+                Menu
+            </div>
+
             <form>
                 <div class="form-group">
                     <label for="text-input">Text Input: <span class="required">*</span></label>

@@ -8,6 +8,10 @@
     <main class="page-main">
         <div class="main-container">
 
+            <div class="title page-title">
+                Menu
+            </div>
+
             <table class="table">
                 <thead class="table-header">
                     <tr class="table-row">

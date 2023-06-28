@@ -8,6 +8,10 @@
     <main class="page-main">
         <div class="main-container">
 
+            <div class="title page-title">
+                Menu
+            </div>
+
             <div class="icon-block">
                 <a href="#" class="icon-link icon-inner">
                     <div class="icon">
