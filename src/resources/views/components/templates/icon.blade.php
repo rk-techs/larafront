@@ -6,7 +6,7 @@
 
 @section('content')
     <main class="page-main">
-        <div class="container main-container">
+        <div class="main-container">
 
             <div class="icon-block">
                 <a href="#" class="icon-link icon-inner">

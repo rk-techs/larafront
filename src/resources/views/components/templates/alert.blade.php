@@ -6,7 +6,7 @@
 
 @section('content')
     <main class="page-main">
-        <div class="container main-container">
+        <div class="main-container">
             <div class="alert alert-stored">Stored!!</div>
             <div class="alert alert-updated">Updated!!</div>
             <div class="alert alert-deleted">Deleted!!</div>

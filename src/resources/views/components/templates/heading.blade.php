@@ -6,7 +6,7 @@
 
 @section('content')
     <main class="page-main">
-        <div class="container main-container">
+        <div class="main-container">
             <h1 class="title title-h1">タイトル</h1>
             <p>本文</p>
             <h2 class="title title-h2">タイトル</h2>

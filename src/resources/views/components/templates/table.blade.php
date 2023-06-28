@@ -6,7 +6,7 @@
 
 @section('content')
     <main class="page-main">
-        <div class="container main-container">
+        <div class="main-container">
 
             <table class="table">
                 <thead class="table-header">

@@ -6,7 +6,7 @@
 
 @section('content')
     <main class="page-main">
-        <div class="container main-container">
+        <div class="main-container">
 
             <div class="btn-group">
                 <div class="btn btn-create">登録</div>

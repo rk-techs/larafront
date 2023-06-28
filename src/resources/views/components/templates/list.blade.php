@@ -6,7 +6,7 @@
 
 @section('content')
     <main class="page-main">
-        <div class="container main-container">
+        <div class="main-container">
 
             <ul class="list">
                 <li class="list-item"><a href="#" class="b-link">リンク</a></li>

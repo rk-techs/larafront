@@ -6,7 +6,7 @@
 
 @section('content')
     <main class="page-main">
-        <div class="container main-container">
+        <div class="main-container">
 
             <a href="#" class="link">リンク1</a>
             <a href="#" class="b-link">リンク2</a>
