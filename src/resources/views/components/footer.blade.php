@@ -1,5 +1,5 @@
 <footer class="page-footer">
-    <div class="container footer-container">
+    <div class="footer-container">
         フッター
     </div>
 </footer>

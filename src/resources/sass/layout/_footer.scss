@@ -4,7 +4,12 @@
   background-color: var(--footer-color);
   color: var(--white);
 
-  @include pc-screen() {}
+  .footer-container {
+    display: flex;
+    padding: 16px var(--sp-page-padding-x);
 
-  .footer-container {}
+    @include pc-screen() {
+      padding: 16px var(--pc-page-padding-x);
+    }
+  }
 }
