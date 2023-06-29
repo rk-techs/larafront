@@ -14,17 +14,17 @@
 
             <form>
                 <div class="form-group">
-                    <label for="text-input">Text Input: <span class="required">*</span></label>
+                    <label class="form-label" for="text-input">Text Input: <span class="required-label">*</span></label>
                     <input type="text" id="text-input" class="input-field" required>
                     <div id="text-input-validation-msg" class="validation-msg">This field is required</div>
                 </div>
                 <div class="form-group">
-                    <label for="email-input">Email Input: <span class="required">*</span></label>
+                    <label class="form-label" for="email-input">Email Input: <span class="required-label">*</span></label>
                     <input type="email" id="email-input" class="input-field" required>
                     <div id="email-input-validation-msg" class="validation-msg">Please enter a valid email</div>
                 </div>
                 <div class="form-group">
-                    <label for="password-input">Password Input: <span class="required">*</span></label>
+                    <label class="form-label" for="password-input">Password Input: <span class="required-label">*</span></label>
                     <input type="password" id="password-input" class="input-field" required>
                     <div id="password-input-validation-msg" class="validation-msg">Password must be at least 8 characters
                     </div>
@@ -32,14 +32,14 @@
 
                 <!-- Date Input -->
                 <div class="form-group">
-                    <label for="date-input">Date Input: <span class="required">*</span></label>
+                    <label class="form-label" for="date-input">Date Input: <span class="required-label">*</span></label>
                     <input type="date" id="date-input" class="input-field" required>
                     <div id="date-input-validation-msg" class="validation-msg">Please select a date</div>
                 </div>
 
                 <!-- Time Input -->
                 <div class="form-group">
-                    <label for="time-input">Time Input: <span class="required">*</span></label>
+                    <label class="form-label" for="time-input">Time Input: <span class="required-label">*</span></label>
                     <input type="time" id="time-input" class="input-field" required>
                     <div id="time-input-validation-msg" class="validation-msg">Please select a time</div>
                 </div>
@@ -62,7 +62,7 @@
 
                 <!-- Select Box -->
                 <div class="form-group">
-                    <label for="select-input">Select Input: <span class="required">*</span></label>
+                    <label class="form-label" for="select-input">Select Input: <span class="required-label">*</span></label>
                     <select id="select-input" class="input-field" required>
                         <option value="">Please select an option</option>
                         <option value="option1">Option 1</option>
@@ -72,7 +72,7 @@
                 </div>
 
                 <div class="form-group">
-                    <button type="submit" class="btn">Submit</button>
+                    <button type="submit" class="form-btn">Submit</button>
                 </div>
             </form>
 
