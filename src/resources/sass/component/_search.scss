@@ -1,0 +1,51 @@
+@use '../global' as *;
+
+.search-block {
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 16px;
+
+  .search-header {
+    background-color: #ccc;
+    border-radius: 4px 4px 0 0;
+    display: flex;
+    color: inherit;
+    justify-content: space-between;
+    padding: 8px;
+
+    &:hover {
+      background-color: #ddd;
+      border-radius: 4px 4px 0 0;
+      cursor: pointer;
+      opacity: 0.9;
+    }
+
+  }
+
+  .search-body {
+    padding: 4px;
+    min-height: 80px;
+    border-radius: 0 0 4px 4px;
+
+    @include pc-screen() {
+      display: flex;
+    }
+
+    .search-col {
+      width: 100%;
+
+      .search-row {
+        padding: 4px;
+      }
+    }
+  }
+
+  .search-footer {
+    border-radius: 0 0 4px 4px;
+    padding: 8px;
+
+    @include pc-screen() {
+      text-align: right;
+    }
+  }
+}

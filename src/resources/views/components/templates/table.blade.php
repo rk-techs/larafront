@@ -23,6 +23,38 @@
                 </div>
             </div>
 
+            <div class="search-block">
+                <header class="search-header">
+                        <span>検索</span>
+                        <span class="material-symbols-outlined">expand_less</span>
+                </header>
+                <div class="search-body">
+
+                    @for ($i=0; $i < 4; $i++)
+                    <div class="search-col">
+                        <div class="search-row">
+                            <label for="inputField{{$i}}">Search Word</label>
+                            <input id="inputField{{$i}}" type="text" class="input-field" placeholder="{{"{$i}"}}">
+                        </div>
+                        <div class="search-row">
+                            <input type="text" class="input-field" placeholder="{{"{$i}"}}">
+                        </div>
+                        <div class="search-row">
+                            <select name="" class="input-field">
+                                <option value="">select!</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                            </select>
+                        </div>
+                    </div>
+                    @endfor
+                </div>
+                <footer class="search-footer">
+                    <div class="btn btn-search">検索開始</div>
+                    <div class="btn btn-cancel">リセット</div>
+                </footer>
+            </div>
+
             <table class="table">
                 <thead class="table-header">
                     <tr class="table-row">
