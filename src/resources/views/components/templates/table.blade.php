@@ -1,15 +1,26 @@
 @extends('layouts.app')
 
 @section('title')
-    table | {{ config('app.name') }}
+    Table | {{ config('app.name') }}
 @endsection
 
 @section('content')
     <main class="page-main">
         <div class="main-container">
 
-            <div class="title page-title">
-                Menu
+            <div class="content-top-bar">
+                <div>
+                    <div class="title title-h1">
+                        Table
+                    </div>
+                </div>
+                <div>
+                    <span>検索結果: XX件</span>
+                </div>
+                <div>
+                    <div class="btn btn-create">Create</div>
+                    <div class="btn btn-update">Update</div>
+                </div>
             </div>
 
             <table class="table">
