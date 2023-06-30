@@ -11,7 +11,7 @@
     display: flex;
     color: inherit;
     justify-content: space-between;
-    padding: 8px;
+    padding: 8px 16px;
 
     &:hover {
       border-radius: 4px 4px 0 0;
@@ -22,7 +22,7 @@
   }
 
   .search-body {
-    padding: 4px;
+    padding: 4px 8px;
     min-height: 80px;
     border-radius: 0 0 4px 4px;
 
@@ -34,14 +34,14 @@
       width: 100%;
 
       .search-row {
-        padding: 4px;
+        padding: 4px 8px;
       }
     }
   }
 
   .search-footer {
     border-radius: 0 0 4px 4px;
-    padding: 8px;
+    padding: 8px 16px 16px;
 
     @include pc-screen() {
       text-align: right;
