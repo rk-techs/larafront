@@ -24,35 +24,40 @@
             </div>
 
             <div class="search-block">
-                <header class="search-header">
+                @push('script')
+                <script src="{{ asset('js/search.js') }}"></script>
+                @endpush
+                <header id="toggleSearchHeader" class="search-header">
                         <span>検索</span>
-                        <span class="material-symbols-outlined">expand_less</span>
+                        <span id="toggleExpandSymbol" class="material-symbols-outlined">expand_less</span>
                 </header>
-                <div class="search-body">
+                <div id="collapseBody">
+                    <div class="search-body">
 
-                    @for ($i=0; $i < 4; $i++)
-                    <div class="search-col">
-                        <div class="search-row">
-                            <label for="inputField{{$i}}">Search Word</label>
-                            <input id="inputField{{$i}}" type="text" class="input-field" placeholder="{{"{$i}"}}">
+                        @for ($i=0; $i < 4; $i++)
+                        <div class="search-col">
+                            <div class="search-row">
+                                <label for="inputField{{$i}}">Search Word</label>
+                                <input id="inputField{{$i}}" type="text" class="input-field" placeholder="{{"{$i}"}}">
+                            </div>
+                            <div class="search-row">
+                                <input type="text" class="input-field" placeholder="{{"{$i}"}}">
+                            </div>
+                            <div class="search-row">
+                                <select name="" class="input-field">
+                                    <option value="">select!</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="search-row">
-                            <input type="text" class="input-field" placeholder="{{"{$i}"}}">
-                        </div>
-                        <div class="search-row">
-                            <select name="" class="input-field">
-                                <option value="">select!</option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                            </select>
-                        </div>
+                        @endfor
                     </div>
-                    @endfor
+                    <footer class="search-footer">
+                        <div class="btn btn-search">検索開始</div>
+                        <div class="btn btn-cancel">リセット</div>
+                    </footer>
                 </div>
-                <footer class="search-footer">
-                    <div class="btn btn-search">検索開始</div>
-                    <div class="btn btn-cancel">リセット</div>
-                </footer>
             </div>
 
             <table class="table">
