@@ -6,24 +6,24 @@
 
   &.page-title {
     border-bottom: 1px solid #ddd;
-    font-size: 1.8rem;
-    margin-bottom: 24px;
+    font-size: 1.6rem;
+    margin-bottom: 16px;
   }
 
   &.title-h1 {
-    font-size: 1.8rem;
-  }
-
-  &.title-h2 {
     font-size: 1.6rem;
   }
 
-  &.title-h3 {
+  &.title-h2 {
     font-size: 1.4rem;
   }
 
-  &.title-h4 {
+  &.title-h3 {
     font-size: 1.2rem;
+  }
+
+  &.title-h4 {
+    font-size: 1rem;
   }
 
   &.title-h5 {
@@ -32,31 +32,5 @@
 
   &.title-h6 {
     font-size: 1rem;
-  }
-
-  @include pc-screen() {
-    &.title-h1 {
-      font-size: 2rem;
-    }
-
-    &.title-h2 {
-      font-size: 1.8rem;
-    }
-
-    &.title-h3 {
-      font-size: 1.6rem;
-    }
-
-    &.title-h4 {
-      font-size: 1.4rem;
-    }
-
-    &.title-h5 {
-      font-size: 1.1rem;
-    }
-
-    &.title-h6 {
-      font-size: 1.1rem;
-    }
   }
 }
