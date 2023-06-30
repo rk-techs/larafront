@@ -2,7 +2,6 @@
 
 .icon-block {
   display: inline-block;
-  margin-right: 8px;
 
   .icon-link {
     align-items: center;
@@ -14,13 +13,9 @@
     }
 
     .icon {
-      display: flex;
       align-items: center;
-      margin-right: 8px;
-    }
-
-    .icon-label {
-      margin-right: 8px;
+      display: flex;
+      margin-right: 4px;
     }
 
     .material-symbols-outlined {
