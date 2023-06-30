@@ -28,3 +28,33 @@
   padding: 1rem;
   text-align: left;
 }
+
+
+.table {
+  &-header {
+    .table-row {
+      th {
+        &:first-child {
+          border-top-left-radius: 4px;
+        }
+        &:last-child {
+          border-top-right-radius: 4px;
+        }
+      }
+    }
+  }
+  &-body {
+    .table-row {
+      &:last-child {
+        td {
+          &:first-child {
+            border-bottom-left-radius: 4px;
+          }
+          &:last-child {
+            border-bottom-right-radius: 4px;
+          }
+        }
+      }
+    }
+  }
+}
