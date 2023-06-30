@@ -50,16 +50,11 @@
       }
     }
 
-    .header-btn {
-      display: none;
-
+    .icon-block {
       @include pc-screen() {
-        align-items: center;
-        display: flex;
         margin-left: auto;
       }
     }
-
 
     .mobile-menu {
       margin-left: auto;

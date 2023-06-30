@@ -10,7 +10,18 @@
             <div class="nav-item"><a href="" class="nav-link">メニュー4</a></div>
             <div class="nav-item"><a href="" class="nav-link">メニュー5</a></div>
         </div>
-        <div class="header-btn btn btn-create">ログイン</div>
+        <div class="icon-block">
+            <a href="#" class="icon-link icon-inner">
+                <div class="icon">
+                    <span class="material-symbols-outlined">
+                        account_circle
+                    </span>
+                </div>
+                <div class="icon-label">
+                    Ryosuke
+                </div>
+            </a>
+        </div>
         <div id="headerToggleButton" class="mobile-menu">
             <span id="headerToggleSymbol" class="material-symbols-outlined">menu</span>
         </div>
