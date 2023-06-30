@@ -23,6 +23,12 @@ class UserFactory extends Factory
             'email_verified_at' => now(),
             'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
             'remember_token' => Str::random(10),
+
+            // additional
+            'address'       => $this->faker->address,
+            'mobile_number' => $this->faker->phoneNumber,
+            'user_type'     => $this->faker->randomElement(['admin', 'user']),
+            'remarks'       => $this->faker->text,
         ];
     }
 

@@ -64,18 +64,30 @@
             <table class="table">
                 <thead class="table-header">
                     <tr class="table-row">
+                        <th class="th-cell">edit</th>
                         <th class="th-cell">id</th>
                         <th class="th-cell">name</th>
-                        <th class="th-cell">created_at</th>
                         <th class="th-cell">email</th>
+                        <th class="th-cell">address</th>
+                        <th class="th-cell">mobile_number</th>
+                        <th class="th-cell">user_type</th>
+                        <th class="th-cell">remarks</th>
+                        <th class="th-cell">created_at</th>
                     </tr>
                 </thead>
                 <tbody class="table-body">
                     @foreach ($users as $user)
                     <tr class="table-row">
+                        <td class="td-cell">
+                            edit
+                        </td>
                         <td class="td-cell">{{ $user->id }}</td>
                         <td class="td-cell">{{ $user->name }}</td>
                         <td class="td-cell">{{ $user->email }}</td>
+                        <td class="td-cell">{{ $user->address }}</td>
+                        <td class="td-cell">{{ $user->mobile_number }}</td>
+                        <td class="td-cell">{{ $user->user_type }}</td>
+                        <td class="td-cell">{{ $user->remarks }}</td>
                         <td class="td-cell">{{ $user->created_at }}</td>
                     </tr>
                     @endforeach
