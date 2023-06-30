@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,3 +26,6 @@ Route::view('/link', 'components.templates.link');
 Route::view('/list', 'components.templates.list');
 Route::view('/table', 'components.templates.table');
 Route::view('/icon', 'components.templates.icon');
+
+// User
+Route::get('/user', [UserController::class, 'index'])->name('user.index');

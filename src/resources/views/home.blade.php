@@ -41,7 +41,7 @@
                 <a href="table" class="menu-link">Table</a>
             </div>
             <div class="menu-item">
-                <a href="" class="menu-link">ユーザー</a>
+                <a href="{{ route('user.index') }}" class="menu-link">ユーザー</a>
             </div>
             <div class="menu-item">
                 <a href="" class="menu-link">得意先</a>
