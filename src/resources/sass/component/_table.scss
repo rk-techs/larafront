@@ -1,55 +1,65 @@
 @use '../global' as *;
 
 .table {
-  --table-header-bg-color: #f8f9fa;
-  --table-header-border-color: #e9ecef;
-  --table-row-border-color: #e9ecef;
+  --table-header-bg-color: #ddd;
+  --table-header-border-color: #ddd;
+  --table-row-border-color: #ddd;
 
+  background-color: var(--white);
   border-collapse: collapse;
+  text-align: left;
   width: 100%;
 }
 
 .table-header {
   background-color: var(--table-header-bg-color);
+
+  .th-cell {
+    border-bottom: 2px solid var(--table-header-border-color);
+    font-weight: bold;
+    padding: 8px 16px;
+  }
 }
 
-.table-header .header-cell {
-  border-bottom: 2px solid var(--table-header-border-color);
-  font-weight: bold;
-  padding: 1rem;
+.table-body {
+
+  .table-row {
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--table-row-border-color);
+    }
+
+    .td-cell {
+      padding: 16px;
+    }
+  }
 }
 
-.table-body .table-row {
-  background-color: var(--white);
-  border-bottom: 1px solid var(--table-row-border-color);
-}
-
-.table-cell {
-  padding: 1rem;
-  text-align: left;
-}
-
-
+/* Round the corners of the table
+-------------------------*/
 .table {
+  border-radius: 4px;
   &-header {
     .table-row {
-      th {
+      .th-cell {
         &:first-child {
           border-top-left-radius: 4px;
         }
+
         &:last-child {
           border-top-right-radius: 4px;
         }
       }
     }
   }
+
   &-body {
     .table-row {
       &:last-child {
-        td {
+        .td-cell {
           &:first-child {
             border-bottom-left-radius: 4px;
           }
+
           &:last-child {
             border-bottom-right-radius: 4px;
           }
