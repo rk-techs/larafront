@@ -18,8 +18,7 @@
                     <span>検索結果: XX件</span>
                 </div>
                 <div>
-                    <div class="btn btn-create">Create</div>
-                    <div class="btn btn-update">Update</div>
+                    <a href="{{ route('user.create') }}" class="btn btn-create">新規登録</a>
                 </div>
             </div>
 
