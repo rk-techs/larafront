@@ -22,6 +22,10 @@
     opacity: 0.8;
   }
 
+  &:focus {
+    opacity: 0.8;
+  }
+
   &.btn-create {
     background-color: var(--create-color);
   }
