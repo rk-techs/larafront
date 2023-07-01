@@ -27,14 +27,27 @@
 }
 
 .form-label {
-  display: block;
+  align-items: center;
+  color: var(--dark);
+  display: flex;
+  font-size: 0.9rem;
   font-weight: bold;
 }
 
-.required-label {
+.required-dot {
+  color: var(--red);
   font-weight: bold;
-  color: var(--error-msg-color);
   margin-left: 4px;
+}
+
+.required-label {
+  background-color: var(--red);
+  border-radius: 16px;
+  color: var(--white);
+  font-size: 0.6rem;
+  font-weight: bold;
+  margin-left: 4px;
+  padding: 0 4px;
 }
 
 .input-field {
@@ -45,21 +58,22 @@
   color: var(--input-txt-color);
   display: block;
   font-size: 1rem;
+  font-family: inherit;
   letter-spacing: 1px;
   padding: 8px;
   width: 100%;
+
+  &:focus {
+    border-color: var(--input-focus-border-color);
+    box-shadow: 0 0 0 3px rgba(134, 180, 255, 0.5);
+    outline: none;
+  }
 }
 
 .input-field[type="checkbox"],
 .input-field[type="radio"] {
   display: inline-block;
   width: auto;
-}
-
-.input-field:focus {
-  border-color: var(--input-focus-border-color);
-  box-shadow: 0 0 0 3px rgba(134, 180, 255, 0.5);
-  outline: none;
 }
 
 .validation-msg {

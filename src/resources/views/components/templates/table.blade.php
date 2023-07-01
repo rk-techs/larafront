@@ -37,7 +37,7 @@
                         @for ($i=0; $i < 4; $i++)
                         <div class="search-col">
                             <div class="search-row">
-                                <label for="inputField{{$i}}">Search Word</label>
+                                <label for="inputField{{$i}}" class="form-label">Search Word</label>
                                 <input id="inputField{{$i}}" type="text" class="input-field" placeholder="{{"{$i}"}}">
                             </div>
                             <div class="search-row">
