@@ -1,0 +1,24 @@
+@use '../global' as *;
+
+.input-block {
+  background-color: var(--white);
+  border-radius: 4px;
+  margin-bottom: 16px;
+
+  .input-body {
+    padding: 8px;
+    border-radius: 0 0 4px 4px;
+
+    @include pc-screen() {
+      display: flex;
+    }
+
+    .input-col {
+      width: 100%;
+
+      .input-row {
+        padding: 4px 8px;
+      }
+    }
+  }
+}

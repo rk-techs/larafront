@@ -29,3 +29,4 @@ Route::view('/icon', 'components.templates.icon');
 
 // User
 Route::get('/user', [UserController::class, 'index'])->name('user.index');
+Route::get('/user/create', [UserController::class, 'create'])->name('user.create');
