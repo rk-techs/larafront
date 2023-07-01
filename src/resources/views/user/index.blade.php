@@ -30,8 +30,8 @@
                         <span>検索</span>
                         <span id="toggleExpandSymbol" class="material-symbols-outlined">expand_less</span>
                 </header>
-                <div id="collapseBody">
-                    <div class="search-body">
+                <div id="collapseBody" class="search-body">
+                    <div class="search-content">
                         <div class="search-col">
                             <div class="search-row">
                                 {{-- <label for="inputFieldID">ID</label> --}}

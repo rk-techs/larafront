@@ -1,6 +1,8 @@
 @use '../global' as *;
 
 .search-block {
+  --padding-x: 16px;
+
   background-color: #fff;
   border-radius: 4px;
   margin-bottom: 16px;
@@ -8,10 +10,11 @@
   .search-header {
     background-color: #ccc;
     border-radius: 4px 4px 0 0;
-    display: flex;
     color: inherit;
+    display: flex;
     justify-content: space-between;
-    padding: 8px 16px;
+    margin-bottom: 16px;
+    padding: 8px var(--padding-x);
 
     &:hover {
       border-radius: 4px 4px 0 0;
@@ -22,9 +25,10 @@
   }
 
   .search-body {
-    padding: 4px 8px;
-    border-radius: 0 0 4px 4px;
+    padding: 0 var(--padding-x);
+  }
 
+  .search-content {
     @include pc-screen() {
       display: flex;
     }
@@ -32,15 +36,21 @@
     .search-col {
       width: 100%;
 
+      &:not(:last-child) {
+        padding-right: 8px;
+      }
+
       .search-row {
-        padding: 4px 8px;
+        &:not(:last-child) {
+          padding-bottom: 8px;
+        }
       }
     }
   }
 
   .search-footer {
-    border-radius: 0 0 4px 4px;
-    padding: 8px 16px 16px;
+    text-align: right;
+    padding: 16px 0;
 
     .btn-search {
       margin-right: 8px;
