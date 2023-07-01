@@ -1,5 +1,15 @@
 @use '../global' as *;
 
+.table-wrapper {
+  border-radius: 4px;
+
+  &.scrollable-table {
+    overflow-x: auto;
+    overflow-y: scroll;
+    max-height: 90vh;
+  }
+}
+
 .table {
   --table-header-bg-color: #ddd;
   --table-header-border-color: #ddd;
@@ -8,12 +18,18 @@
   background-color: var(--white);
   border-collapse: collapse;
   text-align: left;
+
   width: 100%;
-  table-layout: fixed;
+
+  &.fixed-table {
+    table-layout: fixed;
+  }
 }
 
 .table-header {
   background-color: var(--table-header-bg-color);
+  position: sticky;
+  top: 0;
 
   .th-cell {
     border-bottom: 2px solid var(--table-header-border-color);
@@ -70,4 +86,32 @@
       }
     }
   }
+}
+
+/* Spot styles
+-------------------------*/
+.th-cell,
+.td-cell {
+
+  &.ellipsis {
+    max-width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &.hide-on-mobile {
+    display: none;
+
+    @include pc-screen() {
+      display: block;
+    }
+  }
+
+  &.max8 {max-width: 8px;}
+  &.max16 {max-width: 16px;}
+  &.max24 {max-width: 24px;}
+  &.max32 {max-width: 32px;}
+  &.max40 {max-width: 40px;}
+  &.max48 {max-width: 48px;}
 }
