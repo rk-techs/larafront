@@ -20,31 +20,43 @@
                 <div class="input-body">
                     <div class="input-col">
                         <div class="input-row">
-                            <label for="userNameInput" class="form-label">名前<span class="required-label">必須</span></label>
+                            <label for="userNameInput" class="form-label">
+                                <span class="label-txt">名前</span>
+                                <span class="required-label">必須</span>
+                            </label>
                             <input id="userNameInput" type="text" class="input-field" name="name" placeholder="">
                         </div>
                         <div class="input-row">
-                            <label for="userEmailInput" class="form-label">E-mail<span class="required-label">必須</span></label>
+                            <label for="userEmailInput" class="form-label">
+                                <span class="label-txt">E-mail</span>
+                                <span class="required-label">必須</span>
+                            </label>
                             <input id="userEmailInput" type="email" class="input-field" name="email" placeholder="">
                         </div>
                         <div class="input-row">
-                            <label for="userPasswordInput" class="form-label">パスワード<span class="required-label">必須</span></label>
+                            <label for="userPasswordInput" class="form-label">
+                                <span class="label-txt">Password</span>
+                                <span class="required-label">必須</span>
+                            </label>
                             <input id="userPasswordInput" type="password" class="input-field" name="password" placeholder="">
                         </div>
                         <div class="input-row">
-                            <label for="userAddressInput" class="form-label">住所</label>
+                            <label for="userAddressInput" class="form-label">
+                                <span class="label-txt">住所</span>
+                            </label>
                             <input id="userAddressInput" type="text" class="input-field" name="address" placeholder="">
                         </div>
                         <div class="input-row">
-                            <label for="userMobileNumberInput" class="form-label">携帯番号</label>
+                            <label for="userMobileNumberInput" class="form-label">
+                                <span class="label-txt">携帯番号</span>
+                            </label>
                             <input id="userMobileNumberInput" type="text" class="input-field" name="mobile_number" placeholder="">
                         </div>
                         <div class="input-row">
-                            <label for="userRemarksInput" class="form-label">備考</label>
+                            <label for="userRemarksInput" class="form-label">
+                                <span class="label-txt">備考</span>
+                            </label>
                             <textarea id="userRemarksInput" rows="5" class="input-field" name="remarks"></textarea>
-                        </div>
-                        <div class="input-row">
-                            <button class="btn btn-store">Store</button>
                         </div>
                     </div>
                 </div>
