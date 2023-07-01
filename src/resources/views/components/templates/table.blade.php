@@ -29,7 +29,7 @@
                 @endpush
                 <header id="toggleSearchHeader" class="search-header">
                         <span>検索</span>
-                        <span id="toggleExpandSymbol" class="material-symbols-outlined">expand_less</span>
+                        <span id="toggleExpandSymbol" class="material-symbols-outlined">unfold_less</span>
                 </header>
                 <div id="collapseBody" class="search-body">
                     <div class="search-content">

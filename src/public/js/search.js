@@ -7,9 +7,9 @@ const collapseBody       = document.getElementById('collapseBody');
 toggleSearchHeader.addEventListener('click', () => {
   collapseBody.classList.toggle('collapse');
 
-  if (toggleExpandSymbol.textContent == 'expand_less') {
-    toggleExpandSymbol.textContent = 'expand_more';
+  if (toggleExpandSymbol.textContent == 'unfold_less') {
+    toggleExpandSymbol.textContent = 'unfold_more';
   } else {
-    toggleExpandSymbol.textContent = 'expand_less';
+    toggleExpandSymbol.textContent = 'unfold_less';
   }
 });
