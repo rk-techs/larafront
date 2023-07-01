@@ -54,8 +54,8 @@
                         </div>
                     </div>
                     <footer class="search-footer">
-                        <div class="btn btn-search">検索開始</div>
-                        <div class="btn btn-cancel">リセット</div>
+                        <button class="btn btn-search">検索開始</button>
+                        <button class="btn btn-cancel">リセット</button>
                     </footer>
                 </div>
             </div>
