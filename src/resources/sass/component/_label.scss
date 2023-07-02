@@ -1,0 +1,29 @@
+@use '../global' as *;
+
+/* Label
+-------------------------*/
+.form-label {
+  align-items: center;
+  color: var(--dark);
+  display: flex;
+
+  .label-txt {
+    font-weight: bold;
+    margin-right: 4px;
+  }
+
+  .required-dot {
+    color: var(--red);
+    font-weight: bold;
+  }
+
+  .required-label {
+    background-color: var(--white);
+    border: 1px solid var(--red);
+    border-radius: 16px;
+    color: var(--red);
+    font-size: 0.6rem;
+    font-weight: bold;
+    padding: 0 4px;
+  }
+}

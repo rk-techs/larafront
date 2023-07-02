@@ -1,0 +1,11 @@
+@use '../global' as *;
+
+.invalid-feedback {
+  align-items: center;
+  color: var(--error-txt-color);
+  display: flex;
+
+  .material-symbols-outlined {
+    margin-right: 4px;
+  }
+}

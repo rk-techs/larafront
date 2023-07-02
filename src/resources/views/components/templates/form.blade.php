@@ -9,7 +9,7 @@
         <div class="main-container">
 
             <form>
-                <div class="form-group">
+                <div class="input-group">
                     <label class="form-label" for="text-input">
                         <span class="label-txt">Label Name</span>
                         <span class="required-dot">*</span>
@@ -24,7 +24,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="form-group">
+                <div class="input-group">
                     <label class="form-label" for="email-input">
                         <span class="label-txt">Label Name</span>
                         <span class="required-dot">*</span>
@@ -39,7 +39,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="form-group">
+                <div class="input-group">
                     <label class="form-label" for="password-input">
                         <span class="label-txt">Label Name</span>
                         <span class="required-dot">*</span>
@@ -56,7 +56,7 @@
                 </div>
 
                 <!-- Date Input -->
-                <div class="form-group">
+                <div class="input-group">
                     <label class="form-label" for="date-input">
                         <span class="label-txt">Label Name</span>
                         <span class="required-dot">*</span>
@@ -73,7 +73,7 @@
                 </div>
 
                 <!-- Time Input -->
-                <div class="form-group">
+                <div class="input-group">
                     <label class="form-label" for="time-input">
                         <span class="label-txt">Label Name</span>
                         <span class="required-dot">*</span>
@@ -90,12 +90,12 @@
                 </div>
 
                 <!-- Checkbox Input -->
-                <div class="form-group">
+                <div class="input-group">
                     <label><input type="checkbox" id="checkbox-input" class="input-field">Check this box</label>
                 </div>
 
                 <!-- Radio Button Input -->
-                <div class="form-group">
+                <div class="input-group">
                     <label>
                         <input type="radio" name="radio-input" class="input-field" required>Option 1
                     </label>
@@ -113,7 +113,7 @@
                 </div>
 
                 <!-- Select Box -->
-                <div class="form-group">
+                <div class="input-group">
                     <label class="form-label" for="select-input">
                         <span class="label-txt">Label Name</span>
                         <span class="required-dot">*</span>

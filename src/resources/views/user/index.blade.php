@@ -52,7 +52,7 @@
                 </div>
             </div>
 
-            <div class="table-wrapper scrollable-table">
+            <div class="table-block scrollable-table">
                 <table class="table">
                     <thead class="table-header">
                         <tr class="table-row">
