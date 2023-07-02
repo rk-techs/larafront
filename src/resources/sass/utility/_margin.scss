@@ -1,0 +1,75 @@
+/* -----------------------
+Utility: Margin
+4px, 8px, 16px, 24px, auto, 0
+----------------------- */
+
+/* top */
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+.mt-4 { margin-top: 1.5rem; }
+
+/* right */
+.mr-1 { margin-right: 0.25rem; }
+.mr-2 { margin-right: 0.5rem; }
+.mr-3 { margin-right: 1rem; }
+.mr-4 { margin-right: 1.5rem; }
+
+/* bottom */
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+
+/* left */
+.ml-1 { margin-left: 0.25rem; }
+.ml-2 { margin-left: 0.5rem; }
+.ml-3 { margin-left: 1rem; }
+.ml-4 { margin-left: 1.5rem; }
+
+/* x direction */
+.mx-1 { margin-left: 0.25rem; margin-right: 0.25rem; }
+.mx-2 { margin-left: 0.5rem; margin-right: 0.5rem; }
+.mx-3 { margin-left: 1rem; margin-right: 1rem; }
+.mx-4 { margin-left: 1.5rem; margin-right: 1.5rem; }
+
+/* y direction */
+.my-1 { margin-top: 0.25rem; margin-bottom: 0.25rem; }
+.my-2 { margin-top: 0.5rem; margin-bottom: 0.5rem; }
+.my-3 { margin-top: 1rem; margin-bottom: 1rem; }
+.my-4 { margin-top: 1.5rem; margin-bottom: 1.5rem; }
+
+/* auto */
+.mx-auto { margin-left: auto; margin-right: auto; }
+.mt-auto { margin-top: auto; }
+.mr-auto { margin-right: auto; }
+.mb-auto { margin-bottom: auto; }
+.ml-auto { margin-left: auto; }
+
+/* negative */
+.mt-n1 { margin-top: -0.25rem; }
+.mt-n2 { margin-top: -0.5rem; }
+.mt-n3 { margin-top: -1rem; }
+.mt-n4 { margin-top: -1.5rem; }
+
+.mr-n1 { margin-right: -0.25rem; }
+.mr-n2 { margin-right: -0.5rem; }
+.mr-n3 { margin-right: -1rem; }
+.mr-n4 { margin-right: -1.5rem; }
+
+.mb-n1 { margin-bottom: -0.25rem; }
+.mb-n2 { margin-bottom: -0.5rem; }
+.mb-n3 { margin-bottom: -1rem; }
+.mb-n4 { margin-bottom: -1.5rem; }
+
+.ml-n1 { margin-left: -0.25rem; }
+.ml-n2 { margin-left: -0.5rem; }
+.ml-n3 { margin-left: -1rem; }
+.ml-n4 { margin-left: -1.5rem; }
+
+/* zero */
+.m-0 { margin: 0; }
+.mt-0 { margin-top: 0; }
+.mr-0 { margin-right: 0; }
+.mb-0 { margin-bottom: 0; }
+.ml-0 { margin-left: 0; }
