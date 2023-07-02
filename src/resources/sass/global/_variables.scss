@@ -1,16 +1,22 @@
 :root {
-  /* Colors */
+  /* Colors
+  -------------------------*/
   /* Basic Colors */
   --black: #333;
   --white: #fff;
+  --gray: #ccc;
+  --gray-light: #ecf0f1;
+  --gray-medium: #ddd;
+  --gray-deep: #808080;
+  --gray-dark: #343a40;
+  --navy: #2c3e50;
   --red: #ff0000;
   --blue: #0000ff;
+  --blue-sky: #86b4ff;
   --green: #00ff00;
   --yellow: #ffff00;
   --orange: #ffA500;
   --purple: #800080;
-  --pink: #ff69b4;
-  --gray: #808080;
 
   --primary: #007bff;
   --secondary: #6c757d;
@@ -23,14 +29,14 @@
   --link: #007bff;
 
   /* Links */
-  --link-color: #333;
-  --link-bg-color: #ddd;
-  --link-hover-color: blue;
+  --link-color: var(--black);
+  --link-bg-color: var(--gray-medium);
+  --link-hover-color: var(--blue);
 
   /* Layouts */
-  --footer-color: #bdc3c7;
-  --header-color: #2c3e50;
-  --main-color: #ecf0f1;
+  --footer-color: var(--gray-dark);
+  --header-color: var(--navy);
+  --main-color: var(--gray-light);
 
   /* Buttons */
   --create-color: #2ecc71;
@@ -39,25 +45,28 @@
   --update-color: #2980b9;
   --delete-color: #e74c3c;
   --search-color: #1abc9c;
-  --submit-color: #2c3e50;
-  --info-color: #2c3e50;
-  --index-color: #2c3e50;
-  --back-color: #95a5a6;
-  --cancel-color: #7f8c8d;
+  --submit-color: var(--navy);
+  --info-color: var(--navy);
+  --index-color: var(--navy);
+  --back-color: var(--gray-deep);
+  --cancel-color: var(--gray-deep);
 
   /* Alerts */
+  --deleted-bg-color: #f8d7da;
+  --deleted-txt-color: #721c24;
+  --error-bg-color: #f8d7da;
+  --error-txt-color: #721c24;
+  --error-txt-color: #d8000c;
   --stored-bg-color: #a2f2d2;
-  --updated-bg-color: #a1d6f5;
-  --deleted-bg-color: #f6a6a2;
-  --error-bg-color: #f6a6a2;
-  --warning-bg-color: #f9e79f;
   --stored-txt-color: #087830;
+  --updated-bg-color: #a1d6f5;
   --updated-txt-color: #084d79;
-  --deleted-txt-color: #7a1c1c;
-  --error-txt-color: #7a1c1c;
+  --warning-bg-color: #f9e79f;
   --warning-txt-color: #7a650c;
 
-  // padding
+
+  /* Padding
+  -------------------------*/
   --pc-page-padding-x: 24px;
   --sp-page-padding-x: 4%;
 }

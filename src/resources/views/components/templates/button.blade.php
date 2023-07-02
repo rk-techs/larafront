@@ -8,10 +8,6 @@
     <main class="page-main">
         <div class="main-container">
 
-            <div class="title page-title">
-                Menu
-            </div>
-
             <div class="btn-group">
                 <div class="btn btn-create">登録</div>
                 <div class="btn btn-store">保存</div>

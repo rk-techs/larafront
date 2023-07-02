@@ -8,10 +8,6 @@
     <main class="page-main">
         <div class="main-container">
 
-            <div class="title page-title">
-                Menu
-            </div>
-            
             <div class="alert alert-stored">Stored!!</div>
             <div class="alert alert-updated">Updated!!</div>
             <div class="alert alert-deleted">Deleted!!</div>

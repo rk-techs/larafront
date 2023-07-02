@@ -2,10 +2,9 @@
 
 :root {
   --input-bg-color: var(--white);
-  --input-border-color: #ddd;
-  --input-txt-color: #333;
-  --input-focus-border-color: #86b4ff;
-  --error-txt-color: #d8000c;
+  --input-border-color: var(--gray-medium);
+  --input-txt-color: var(--black);
+  --input-focus-border-color: var(--blue-sky);
 }
 
 .form-group {

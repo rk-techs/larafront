@@ -8,13 +8,15 @@
 <main class="page-home">
     <div class="home-container">
 
-        <div class="title page-title">
-            Menu
+        <div class="content-header-block">
+            <div class="title title-h1">
+                Menu
+            </div>
         </div>
 
         <div class="menu-list">
             <div class="menu-item">
-                <a href="/" class="menu-link">HOME</a>
+                <a href="{{ route('user.index') }}" class="menu-link">ユーザー</a>
             </div>
             <div class="menu-item">
                 <a href="alert" class="menu-link">Alert</a>
@@ -29,19 +31,16 @@
                 <a href="heading" class="menu-link">Heading</a>
             </div>
             <div class="menu-item">
+                <a href="icon" class="menu-link">Icon</a>
+            </div>
+            <div class="menu-item">
                 <a href="list" class="menu-link">List</a>
             </div>
             <div class="menu-item">
                 <a href="link" class="menu-link">Link</a>
             </div>
             <div class="menu-item">
-                <a href="icon" class="menu-link">Icon</a>
-            </div>
-            <div class="menu-item">
                 <a href="table" class="menu-link">Table</a>
-            </div>
-            <div class="menu-item">
-                <a href="{{ route('user.index') }}" class="menu-link">ユーザー</a>
             </div>
             <div class="menu-item">
                 <a href="" class="menu-link">得意先</a>

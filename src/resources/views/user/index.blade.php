@@ -8,14 +8,9 @@
     <main class="page-main">
         <div class="main-container">
 
-            <div class="content-top-bar">
-                <div>
-                    <div class="title title-h1">
-                        User
-                    </div>
-                </div>
-                <div>
-                    <span>検索結果: XX件</span>
+            <div class="content-header-block">
+                <div class="title title-h1">
+                    User
                 </div>
                 <div>
                     <a href="{{ route('user.create') }}" class="btn btn-create">新規登録</a>
@@ -28,26 +23,23 @@
                 @endpush
                 <header id="toggleSearchHeader" class="search-header">
                         <span>検索</span>
-                        <span id="toggleExpandSymbol" class="material-symbols-outlined">expand_less</span>
+                        <span id="toggleExpandSymbol" class="material-symbols-outlined">unfold_less</span>
                 </header>
                 <div id="collapseBody" class="search-body">
                     <div class="search-content">
                         <div class="search-col">
                             <div class="search-row">
-                                {{-- <label for="inputFieldID">ID</label> --}}
                                 <input id="inputFieldID" type="text" class="input-field" placeholder="ID">
                             </div>
                         </div>
                         <div class="search-col">
                             <div class="search-row">
-                                {{-- <label for="inputFieldName">名前</label> --}}
                                 <input id="inputFieldName" type="text" class="input-field" placeholder="名前">
                             </div>
                         </div>
                         <div class="search-col">
                             <div class="sarch-row">
                                 <div class="search-row">
-                                    {{-- <label for="inputFieldEmail">email</label> --}}
                                     <input id="inputFieldEmail" type="text" class="input-field" placeholder="email">
                                 </div>
                             </div>

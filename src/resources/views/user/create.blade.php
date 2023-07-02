@@ -8,11 +8,9 @@
     <main class="page-main">
         <div class="main-container">
 
-            <div class="content-top-bar">
-                <div>
-                    <div class="title title-h1">
-                        User Create
-                    </div>
+            <div class="content-header-block">
+                <div class="title title-h1">
+                    User Create
                 </div>
             </div>
 
