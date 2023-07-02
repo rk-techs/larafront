@@ -5,11 +5,11 @@
   color: var(--white);
 
   .footer-container {
-    display: flex;
-    padding: 16px var(--sp-page-padding-x);
+    text-align: center;
+    padding: 4px var(--sp-page-padding-x);
 
     @include pc-screen() {
-      padding: 16px var(--pc-page-padding-x);
+      padding: 4px var(--pc-page-padding-x);
     }
   }
 }
