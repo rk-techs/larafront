@@ -46,8 +46,11 @@
                         </div>
                     </div>
                     <footer class="search-footer">
-                        <button class="btn btn-cancel">リセット</button>
-                        <button class="btn btn-search">検索開始</button>
+                        <div class="btn-group">
+                            <button class="btn btn-cancel mr-3">リセット</button>
+                            <button class="btn btn-search">検索開始</button>
+                        </div>
+                        <div class="search-info">検索結果 : XX 件</div>
                     </footer>
                 </div>
             </div>

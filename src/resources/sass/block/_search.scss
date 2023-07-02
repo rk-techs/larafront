@@ -53,11 +53,23 @@
   }
 
   .search-footer {
-    text-align: right;
     padding: 16px 0;
 
-    :first-child {
-      margin-right: 8px;
+    .search-info {
+      margin-top: 16px;
+    }
+
+    @include pc-screen() {
+      align-items: center;
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      justify-content: end;
+
+      .search-info {
+        margin-right: 16px;
+        margin-top: 0px;
+      }
     }
   }
 }
