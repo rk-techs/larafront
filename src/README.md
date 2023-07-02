@@ -60,10 +60,10 @@ block
 
 Parent layer > Child layer
 
-- `page-header` > `header-container`
-- `page-main`   > `main-container`
+- `layout-header` > `header-container`
+- `layout-main`   > `main-container`
 - `breadcrums`  > `bc-container`
-- `page-footer` > `footer-container`
+- `layout-footer` > `footer-container`
 
 ### CSSクラス名 略称
 

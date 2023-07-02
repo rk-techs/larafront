@@ -1,4 +1,4 @@
-<header class="page-header">
+<header class="layout-header">
     <div class="header-container">
         <div class="header-title">
             <a href="/" class="title-link">larafront</a>

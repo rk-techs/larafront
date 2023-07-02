@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <main class="page-main">
+    <main class="layout-main">
         <div class="main-container">
 
             <h1 class="title title-h1">タイトル</h1>

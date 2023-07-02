@@ -1,4 +1,4 @@
-<footer class="page-footer">
+<footer class="layout-footer">
     <div class="footer-container">
         フッター
     </div>

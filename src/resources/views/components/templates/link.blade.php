@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <main class="page-main">
+    <main class="layout-main">
         <div class="main-container">
 
             <a href="#" class="link">リンク1</a>
