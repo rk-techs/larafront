@@ -12,6 +12,7 @@
   --navy: #2c3e50;
   --red: #ff0000;
   --blue: #0000ff;
+  --blue-light: #0080ff;
   --blue-sky: #86b4ff;
   --green: #00ff00;
   --yellow: #ffff00;
@@ -34,22 +35,22 @@
   --link-hover-color: var(--blue);
 
   /* Layouts */
-  --footer-color: var(--gray-dark);
+  --footer-color: var(--navy);
   --header-color: var(--navy);
   --main-color: var(--gray-light);
 
   /* Buttons */
   --create-color: #2ecc71;
-  --store-color: #27ae60;
-  --edit-color: #3498db;
-  --update-color: #2980b9;
+  --store-color: #2ecc71;
+  --edit-color: var(--blue-light);
+  --update-color: var(--blue-light);
   --delete-color: #e74c3c;
-  --search-color: #1abc9c;
-  --submit-color: var(--navy);
-  --info-color: var(--navy);
-  --index-color: var(--navy);
-  --back-color: var(--gray-deep);
-  --cancel-color: var(--gray-deep);
+  --search-color: var(--blue-light);
+  --submit-color: var(--gray-deep);
+  --info-color: var(--gray-deep);
+  --index-color: var(--gray-deep);
+  --back-color: var(--gray);
+  --cancel-color: var(--gray);
 
   /* Alerts */
   --deleted-bg-color: #f8d7da;
