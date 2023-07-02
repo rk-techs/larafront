@@ -11,6 +11,8 @@
   margin-bottom: 16px;
 }
 
+/* Label
+-------------------------*/
 .form-label {
   align-items: center;
   color: var(--dark);
@@ -37,6 +39,8 @@
   }
 }
 
+/* Input
+-------------------------*/
 .input-field {
   background-color: var(--input-bg-color);
   border: 1px solid var(--input-border-color);
@@ -71,6 +75,8 @@
   width: auto;
 }
 
+/* Validation Error Message
+-------------------------*/
 .invalid-feedback {
   align-items: center;
   color: var(--error-txt-color);
