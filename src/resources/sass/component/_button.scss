@@ -9,14 +9,13 @@
   }
 }
 
+/* Button
+-------------------------*/
 .btn {
-  background-color: var(--gray);
   border-radius: 4px;
-  color: var(--white);
   cursor: pointer;
   display: inline-block;
   padding: 4px 16px;
-  text-align: center;
 
   &:hover {
     opacity: 0.8;
@@ -28,46 +27,57 @@
 
   &.btn-create {
     background-color: var(--create-color);
+    color: var(--white);
   }
 
   &.btn-store {
     background-color: var(--store-color);
+    color: var(--white);
   }
 
   &.btn-edit {
     background-color: var(--edit-color);
+    color: var(--white);
   }
 
   &.btn-update {
     background-color: var(--update-color);
+    color: var(--white);
   }
 
   &.btn-delete {
     background-color: var(--delete-color);
+    color: var(--white);
   }
 
   &.btn-search {
     background-color: var(--search-color);
+    color: var(--white);
   }
 
   &.btn-submit {
     background-color: var(--submit-color);
+    color: var(--white);
   }
 
   &.btn-info {
     background-color: var(--info-color);
+    color: var(--white);
   }
 
   &.btn-index {
     background-color: var(--index-color);
+    color: var(--white);
   }
 
   &.btn-back {
     background-color: var(--back-color);
+    color: var(--white);
   }
 
   &.btn-cancel {
     background-color: var(--cancel-color);
+    color: var(--white);
   }
 
 }
