@@ -14,10 +14,7 @@
   --blue: #0000ff;
   --blue-light: #0080ff;
   --blue-sky: #86b4ff;
-  --green: #00ff00;
-  --yellow: #ffff00;
-  --orange: #ffA500;
-  --purple: #800080;
+  --green: #2ecc71;
 
   --primary: #007bff;
   --secondary: #6c757d;
@@ -40,8 +37,8 @@
   --main-color: var(--gray-light);
 
   /* Buttons */
-  --create-color: #2ecc71;
-  --store-color: #2ecc71;
+  --create-color: var(--green);
+  --store-color: var(--green);
   --edit-color: var(--blue-light);
   --update-color: var(--blue-light);
   --delete-color: #e74c3c;
