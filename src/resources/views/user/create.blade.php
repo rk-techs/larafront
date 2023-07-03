@@ -10,8 +10,9 @@
 
             <div class="content-header-block">
                 <div class="title title-h1">
-                    User Create
+                    User > Create
                 </div>
+                <button class="btn btn-store">保存</button>
             </div>
 
             <div class="input-block">
