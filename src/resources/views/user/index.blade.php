@@ -26,7 +26,28 @@
                     <span id="toggleExpandSymbol" class="material-symbols-outlined">unfold_less</span>
                 </div>
                 <div id="collapseSearchBody" class="search-body">
-                    {{-- contents here --}}
+                    <div class="row">
+                        <div class="col-1">
+                            <input type="text" class="input-field" placeholder="ID">
+                        </div>
+                        <div class="col-3">
+                            <input type="text" class="input-field" placeholder="名前">
+                        </div>
+                        <div class="col-4">
+                            <input type="text" class="input-field" placeholder="E-mail">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="input-field" placeholder="Tel">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <input type="text" class="input-field" placeholder="住所">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="input-field" placeholder="備考">
+                        </div>
+                    </div>
                 </div>
                 <div id="collapseSearchFooter" class="search-footer">
                     <div class="btn-group">
