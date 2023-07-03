@@ -21,37 +21,19 @@
                 @push('script')
                 <script src="{{ asset('js/search.js') }}"></script>
                 @endpush
-                <header id="toggleSearchHeader" class="search-header">
-                        <span>検索</span>
-                        <span id="toggleExpandSymbol" class="material-symbols-outlined">unfold_less</span>
-                </header>
-                <div id="collapseBody" class="search-body">
-                    <div class="search-content">
-                        <div class="search-col">
-                            <div class="search-row">
-                                <input id="inputFieldID" type="text" class="input-field" placeholder="ID">
-                            </div>
-                        </div>
-                        <div class="search-col">
-                            <div class="search-row">
-                                <input id="inputFieldName" type="text" class="input-field" placeholder="名前">
-                            </div>
-                        </div>
-                        <div class="search-col">
-                            <div class="sarch-row">
-                                <div class="search-row">
-                                    <input id="inputFieldEmail" type="text" class="input-field" placeholder="email">
-                                </div>
-                            </div>
-                        </div>
+                <div class="search-header">
+                    <span>検索</span>
+                    <span id="toggleExpandSymbol" class="material-symbols-outlined">unfold_less</span>
+                </div>
+                <div id="collapseSearchBody" class="search-body">
+                    {{-- contents here --}}
+                </div>
+                <div id="collapseSearchFooter" class="search-footer">
+                    <div class="btn-group">
+                        <button class="btn btn-cancel mr-3">リセット</button>
+                        <button class="btn btn-search">検索開始</button>
                     </div>
-                    <footer class="search-footer">
-                        <div class="btn-group">
-                            <button class="btn btn-cancel mr-3">リセット</button>
-                            <button class="btn btn-search">検索開始</button>
-                        </div>
-                        <div class="search-info">検索結果 : XX 件</div>
-                    </footer>
+                    <div class="search-info">検索結果 : XX 件</div>
                 </div>
             </div>
 

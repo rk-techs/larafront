@@ -14,7 +14,6 @@
     color: inherit;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 16px;
     padding: 4px var(--padding-x);
 
     .material-symbols-outlined {
@@ -30,33 +29,22 @@
 
   .search-body {
     padding: 0 var(--padding-x);
-  }
 
-  .search-content {
-    @include pc-screen() {
-      display: flex;
+    &.collapse {
+      display: none;
     }
 
-    .search-col {
-      width: 100%;
-
-      &:not(:last-child) {
-        padding-right: 8px;
-      }
-
-      .search-row {
-        &:not(:last-child) {
-          padding-bottom: 8px;
-        }
-      }
-    }
   }
 
   .search-footer {
-    padding: 16px 0;
+    padding: 16px var(--padding-x);
 
     .search-info {
       margin-top: 16px;
+    }
+
+    &.collapse {
+      display: none;
     }
 
     @include pc-screen() {
@@ -72,4 +60,5 @@
       }
     }
   }
+
 }
