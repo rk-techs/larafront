@@ -50,14 +50,8 @@
       }
     }
 
-    .icon-block {
-      @include pc-screen() {
-        margin-left: auto;
-      }
-    }
-
     .mobile-menu {
-      margin-left: auto;
+      margin-left: 16px;
 
       @include pc-screen() {
         display: none;
@@ -117,6 +111,7 @@
 
 .profile-block {
   position: relative;
+  margin-left: auto;
 }
 
 .profile-modal {
@@ -125,7 +120,7 @@
   box-shadow: 0 0 8px var(--gray-dark);
   color: var(--black);
   display: none;
-  left: 0;
+  right: 0;
   min-width: 240px;
   position: absolute;
   text-align: center;
@@ -134,11 +129,6 @@
 
   &.show {
     display: block;
-  }
-
-  @include pc-screen() {
-    left: initial;
-    right: 0;
   }
 }
 
