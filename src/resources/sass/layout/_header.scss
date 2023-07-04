@@ -104,3 +104,62 @@
     }
   }
 }
+
+/* Profile Modal Window
+-------------------------*/
+@mixin hover-effect {
+  &:hover {
+    background-color: var(--gray-light);
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}
+
+.profile-block {
+  position: relative;
+}
+
+.profile-modal {
+  background-color: var(--white);
+  border-radius: 4px;
+  box-shadow: 0 0 8px var(--gray-dark);
+  color: var(--black);
+  display: none;
+  left: 0;
+  min-width: 240px;
+  position: absolute;
+  text-align: center;
+  top: 24px;
+  z-index: var(--z-index-modal);
+
+  &.show {
+    display: block;
+  }
+
+  @include pc-screen() {
+    left: initial;
+    right: 0;
+  }
+}
+
+.profile-modal-header {
+  border-bottom: 1px solid var(--gray);
+  padding: 16px;
+}
+
+.profile-modal-body {
+  border-bottom: 1px solid var(--gray);
+
+  .profile-menu {
+    padding: 8px;
+    @include hover-effect;
+  }
+}
+
+.profile-modal-footer {
+  border-radius: 0 0 4px 4px;
+  color: var(--red);
+  padding-bottom: 8px;
+  padding-top: 8px;
+  @include hover-effect;
+}

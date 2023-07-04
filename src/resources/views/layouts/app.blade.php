@@ -20,6 +20,8 @@
 
     @include('components.footer')
 
+    @include('components.mask')
+
     @stack('script')
 </body>
 </html>
