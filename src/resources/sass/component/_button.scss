@@ -22,6 +22,12 @@
     opacity: 0.8;
   }
 
+  &.block-btn {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
   &.btn-create {
     background-color: var(--create-color);
     color: var(--white);
@@ -75,6 +81,11 @@
   &.btn-cancel {
     background-color: var(--cancel-color);
     color: var(--black);
+  }
+
+  &.btn-login {
+    background-color: var(--login-color);
+    color: var(--white);
   }
 
 }

@@ -35,3 +35,12 @@ Route::get('/user/create', [UserController::class, 'create'])->name('user.create
 // Customer
 Route::get('/customer', [CustomerController::class, 'index'])->name('customer.index');
 Route::get('/customer/create', [CustomerController::class, 'create'])->name('customer.create');
+
+
+/*
+|--------------------------------------------------------------------------
+| Auth Routes
+|--------------------------------------------------------------------------
+|
+*/
+Route::view('login', 'auth.login');
