@@ -28,6 +28,16 @@
     width: 100%;
   }
 
+  &.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+  }
+
+  &.btn-success {
+    background-color: var(--success);
+    color: var(--white);
+  }
+
   &.btn-create {
     background-color: var(--create-color);
     color: var(--white);
