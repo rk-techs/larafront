@@ -19,6 +19,9 @@
                 <a href="{{ route('user.index') }}" class="menu-link">ユーザー</a>
             </div>
             <div class="menu-item">
+                <a href="{{ route('customer.index') }}" class="menu-link">得意先</a>
+            </div>
+            <div class="menu-item">
                 <a href="alert" class="menu-link">Alert</a>
             </div>
             <div class="menu-item">
@@ -41,9 +44,6 @@
             </div>
             <div class="menu-item">
                 <a href="table" class="menu-link">Table</a>
-            </div>
-            <div class="menu-item">
-                <a href="" class="menu-link">得意先</a>
             </div>
             <div class="menu-item">
                 <a href="" class="menu-link">受注</a>

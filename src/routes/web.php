@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -30,3 +31,7 @@ Route::view('/icon', 'components.templates.icon');
 // User
 Route::get('/user', [UserController::class, 'index'])->name('user.index');
 Route::get('/user/create', [UserController::class, 'create'])->name('user.create');
+
+// Customer
+Route::get('/customer', [CustomerController::class, 'index'])->name('customer.index');
+Route::get('/customer/create', [CustomerController::class, 'create'])->name('customer.create');
