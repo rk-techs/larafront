@@ -80,10 +80,10 @@
                             <td class="td-cell">
                                 edit
                             </td>
-                            <td class="td-cell">
+                            <td class="td-cell u-max-w-80">
                                 {{ $user->id }}
                             </td>
-                            <td class="td-cell">
+                            <td class="td-cell u-min-w-120">
                                 {{ $user->name }}
                             </td>
                             <td class="td-cell">
@@ -92,7 +92,7 @@
                             <td class="td-cell ellipsis">
                                 {{ $user->address }}
                             </td>
-                            <td class="td-cell">
+                            <td class="td-cell u-min-w-160">
                                 {{ $user->mobile_number }}
                             </td>
                             <td class="td-cell">
@@ -101,10 +101,10 @@
                             <td class="td-cell ellipsis">
                                 {{ $user->remarks }}
                             </td>
-                            <td class="td-cell">
+                            <td class="td-cell ellipsis">
                                 {{ $user->created_at }}
                             </td>
-                            <td class="td-cell">
+                            <td class="td-cell ellipsis">
                                 {{ $user->updated_at }}
                             </td>
                         </tr>
