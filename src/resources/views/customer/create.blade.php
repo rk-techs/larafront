@@ -115,7 +115,57 @@
                         </div>
                     </div>
 
+                </div>
+            </div>
 
+            {{-- 明細 --}}
+            <div class="input-block">
+                <div class="input-table table-block scrollable-table">
+                    <table class="table">
+                        <thead class="table-header">
+                            <tr class="table-row">
+
+                                <th class="th-cell">No</th>
+                                <th class="th-cell">入力1</th>
+                                <th class="th-cell">入力2</th>
+                                <th class="th-cell">入力3</th>
+                                <th class="th-cell">入力4</th>
+                                <th class="th-cell">入力5</th>
+                                <th class="th-cell">入力6</th>
+                                <th class="th-cell">入力7</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-body">
+                            <tr class="table-row">
+                                <td class="td-cell u-txt-center">
+                                    1
+                                </td>
+
+                                <td class="td-cell u-min-w-240">
+                                    <input type="text" class="input-field">
+                                </td>
+
+                                <td class="td-cell u-min-w-240">
+                                    <input type="text" class="input-field">
+                                </td>
+                                <td class="td-cell u-min-w-240">
+                                    <input type="text" class="input-field">
+                                </td>
+                                <td class="td-cell u-min-w-240">
+                                    <input type="text" class="input-field">
+                                </td>
+                                <td class="td-cell u-min-w-240">
+                                    <input type="text" class="input-field">
+                                </td>
+                                <td class="td-cell u-min-w-240">
+                                    <input type="text" class="input-field">
+                                </td>
+                                <td class="td-cell u-min-w-240">
+                                    <input type="text" class="input-field">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
 

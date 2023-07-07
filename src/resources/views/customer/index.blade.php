@@ -55,7 +55,7 @@
                     <thead class="table-header">
                         <tr class="table-row">
                             <th class="th-cell">edit</th>
-
+                            <th class="th-cell">name</th>
                         </tr>
                     </thead>
                     <tbody class="table-body">
@@ -63,6 +63,9 @@
                         <tr class="table-row">
                             <td class="td-cell">
                                 edit
+                            </td>
+                            <td class="td-cell">
+                                名前
                             </td>
                         </tr>
 
