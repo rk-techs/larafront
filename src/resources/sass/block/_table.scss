@@ -33,6 +33,7 @@
 
   .th-cell {
     border-bottom: 2px solid var(--table-header-border-color);
+    border-right: 1px solid var(--gray-light);
     font-weight: bold;
     padding: 8px 16px;
     overflow-wrap: break-word;
@@ -47,7 +48,8 @@
     }
 
     .td-cell {
-      padding: 16px;
+      border-right: 1px solid var(--gray-light);
+      padding: 8px 16px;
       overflow-wrap: break-word;
     }
   }
@@ -107,11 +109,4 @@
       display: block;
     }
   }
-
-  &.max8 {max-width: 8px;}
-  &.max16 {max-width: 16px;}
-  &.max24 {max-width: 24px;}
-  &.max32 {max-width: 32px;}
-  &.max40 {max-width: 40px;}
-  &.max48 {max-width: 48px;}
 }
