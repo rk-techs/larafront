@@ -9,7 +9,8 @@ input[type="month"],
 input[type="week"],
 input[type="datetime-local"],
 input[type="time"],
-input[type="date"] {
+input[type="date"],
+select {
   max-height: 36px;
 }
 
