@@ -125,6 +125,7 @@
                         <thead class="table-header">
                             <tr class="table-row">
 
+                                <th class="th-cell"></th>
                                 <th class="th-cell">No</th>
                                 <th class="th-cell">入力1</th>
                                 <th class="th-cell">入力2</th>
@@ -137,6 +138,24 @@
                         </thead>
                         <tbody class="table-body">
                             <tr class="table-row">
+
+                                <td class="td-cell">
+                                    <div id="tableRowModalTrigger" class="table-row-modal-wrapper">
+                                        @push('script')
+                                        <script src="{{ asset('js/detail-table.js') }}"></script>
+                                        @endpush
+                                        <span class="material-symbols-outlined">
+                                            more_vert
+                                        </span>
+                                        <div id="tableRowModal" class="modal-in-table">
+                                            <ul class="in-table-list">
+                                                <li class="in-table-item">複製</li>
+                                                <li class="in-table-item">削除</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </td>
+
                                 <td class="td-cell u-txt-center">
                                     1
                                 </td>
@@ -168,6 +187,8 @@
                     </table>
                 </div>
             </div>
+
+            <button class="btn btn-primary">行追加</button>
 
         </div>
     </main>
