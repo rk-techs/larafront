@@ -36,6 +36,7 @@ Route::get('/user/create', [UserController::class, 'create'])->name('user.create
 Route::get('/customer', [CustomerController::class, 'index'])->name('customer.index');
 Route::get('/customer/create', [CustomerController::class, 'create'])->name('customer.create');
 
+Route::view('/order', 'order.index')->name('order.index');
 
 /*
 |--------------------------------------------------------------------------
