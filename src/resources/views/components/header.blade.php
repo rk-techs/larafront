@@ -42,7 +42,10 @@
         </div>
     </div>
 
-    {{-- Collapse Menu on Mobile --}}
+</header>
+
+{{-- Collapse Menu on Mobile --}}
+<div class="layout-collapse-header">
     <div id="collapseNav" class="header-collapse-container">
         <div class="header-nav">
             <div class="nav-item"><a href="" class="nav-link">メニュー1</a></div>
@@ -52,7 +55,7 @@
             <div class="nav-item"><a href="" class="nav-link">メニュー5</a></div>
         </div>
     </div>
-</header>
+</div>
 
 @push('script')
     <script src="{{ asset('js/header.js') }}"></script>

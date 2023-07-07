@@ -69,35 +69,6 @@
       }
     }
   }
-
-  .header-collapse-container {
-    display: none;
-
-    &.visible {
-      display: block;
-      padding: 0 24px 24px 24px;
-
-      @include pc-screen() {
-        display: none;
-      }
-    }
-
-    .header-nav {
-      .nav-item {
-        border-bottom: 1px solid #fff;
-
-        .nav-link {
-          color: inherit;
-          display: block;
-          padding: 8px;
-
-          &:hover {
-            background-color: #397abed3;
-          }
-        }
-      }
-    }
-  }
 }
 
 /* Profile Modal Window
@@ -153,4 +124,38 @@
   padding-bottom: 8px;
   padding-top: 8px;
   @include hover-effect;
+}
+
+.layout-collapse-header {
+  background-color: var(--header-color);
+  color: var(--white);
+  
+  .header-collapse-container {
+    display: none;
+
+    &.visible {
+      display: block;
+      padding: 0 24px 24px 24px;
+
+      @include pc-screen() {
+        display: none;
+      }
+    }
+
+    .header-nav {
+      .nav-item {
+        border-bottom: 1px solid #fff;
+
+        .nav-link {
+          color: inherit;
+          display: block;
+          padding: 8px;
+
+          &:hover {
+            background-color: #397abed3;
+          }
+        }
+      }
+    }
+  }
 }
