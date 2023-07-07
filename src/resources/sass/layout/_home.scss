@@ -6,6 +6,7 @@ $pc-padding: 16px 24px;
 .layout-home {
   background-color: var(--main-color);
   color: var(--black);
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
 
   .home-container {
     margin: 0 auto;

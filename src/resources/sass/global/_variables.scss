@@ -31,11 +31,6 @@
   --link-bg-color: var(--gray-medium);
   --link-hover-color: var(--blue);
 
-  /* Layouts */
-  --footer-color: var(--navy);
-  --header-color: var(--navy);
-  --main-color: var(--gray-light);
-
   /* Buttons */
   --create-color: var(--green);
   --store-color: var(--green);
@@ -62,6 +57,16 @@
   --warning-bg-color: #f9e79f;
   --warning-txt-color: #7a650c;
 
+  /* Layout
+  -------------------------*/
+  /* colors */
+  --footer-color: var(--navy);
+  --header-color: var(--navy);
+  --main-color: var(--gray-light);
+
+  /* height */
+  --header-height: 40px;
+  --footer-height: 32px;
 
   /* Padding
   -------------------------*/
