@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreUserRequest;
+use App\Models\Employee;
 use App\Models\Permission;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -35,7 +37,24 @@ class UserController extends Controller
     public function store(StoreUserRequest $request)
     {
         $inputs = $request->all();
-        dd($inputs);
+
+        $user = User::create([
+            'permission_id' => $inputs['permission_id'],
+            'name'          => $inputs['name'],
+            'email'         => $inputs['email'],
+            'password'      => Hash::make($inputs['password']),
+
+        ]);
+
+        Employee::create([
+            'user_id'       => $user->id,
+            'mobile_number' => $inputs['mobile_number'],
+            'remark'        => $inputs['remark'],
+        ]);
+
+        return redirect()
+                ->route('user.index')
+                ->with('success', '登録しました。');
     }
 
     /**
