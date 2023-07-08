@@ -4,11 +4,13 @@
             <a href="/" class="title-link">larafront</a>
         </div>
         <div class="header-nav">
+            <div class="nav-item {{ Request::is('/') ? 'active' : '' }}">
+                <a href="{{ route('home') }}" class="nav-link">HOME</a>
+            </div>
             <div class="nav-item"><a href="" class="nav-link">メニュー1</a></div>
             <div class="nav-item"><a href="" class="nav-link">メニュー2</a></div>
             <div class="nav-item"><a href="" class="nav-link">メニュー3</a></div>
             <div class="nav-item"><a href="" class="nav-link">メニュー4</a></div>
-            <div class="nav-item"><a href="" class="nav-link">メニュー5</a></div>
         </div>
         <div id="profileButton" class="icon-block profile-block">
             <a href="#" class="icon-link icon-inner">
@@ -48,11 +50,13 @@
 <div class="layout-collapse-header">
     <div id="collapseNav" class="header-collapse-container">
         <div class="header-nav">
+            <div class="nav-item {{ Request::is('/') ? 'active' : '' }}">
+                <a href="{{ route('home') }}" class="nav-link">HOME</a>
+            </div>
             <div class="nav-item"><a href="" class="nav-link">メニュー1</a></div>
             <div class="nav-item"><a href="" class="nav-link">メニュー2</a></div>
             <div class="nav-item"><a href="" class="nav-link">メニュー3</a></div>
             <div class="nav-item"><a href="" class="nav-link">メニュー4</a></div>
-            <div class="nav-item"><a href="" class="nav-link">メニュー5</a></div>
         </div>
     </div>
 </div>

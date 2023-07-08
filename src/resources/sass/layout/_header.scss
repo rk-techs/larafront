@@ -33,10 +33,15 @@
 
       @include pc-screen() {
         align-items: center;
+        color: var(--inactive);
         display: flex;
       }
 
       .nav-item {
+        
+        &.active {
+          color: var(--white);
+        }
 
         .nav-link {
           color: inherit;
@@ -45,6 +50,7 @@
           padding: 8px;
 
           &:hover {
+            color: var(--white);
             opacity: 0.8;
           }
         }
@@ -129,7 +135,7 @@
 .layout-collapse-header {
   background-color: var(--header-color);
   color: var(--white);
-  
+
   .header-collapse-container {
     display: none;
 

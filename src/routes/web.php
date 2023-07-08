@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 Route::view('/alert', 'components.templates.alert');
 Route::view('/button', 'components.templates.button');
