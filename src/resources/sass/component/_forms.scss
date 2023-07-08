@@ -58,3 +58,31 @@ select {
   font-size: 0.875rem;
   margin-top: 0.25rem;
 }
+
+/* Label
+-------------------------*/
+.form-label {
+  align-items: center;
+  display: flex;
+
+  .label-txt {
+    color: var(--dark);
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-right: 4px;
+  }
+
+  .required-dot {
+    color: var(--red);
+    font-weight: bold;
+  }
+
+  .required-label {
+    border: 1px solid var(--red);
+    border-radius: 16px;
+    color: var(--red);
+    font-size: 0.5rem;
+    font-weight: bold;
+    padding: 0 4px;
+  }
+}
