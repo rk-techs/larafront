@@ -26,22 +26,23 @@
                     </span>
                 </div>
                 <div class="icon-label">
-                    Ryosuke
+                    {{ auth()->user()->name }}
                 </div>
             </a>
             <div id="profileModal" class="profile-modal">
                 <div class="profile-modal-header">
-                    <p>User Name</p>
-                    <p><small>info@example.com</small></p>
+                    <p>{{ auth()->user()->name }}</p>
+                    <p><small>{{ auth()->user()->email }}</small></p>
                 </div>
                 <div class="profile-modal-body">
                     <div class="profile-menu">マイページ</div>
                     <div class="profile-menu">申請</div>
                 </div>
                 <div class="profile-modal-footer">
-                    <div class="logout">
-                        ログアウト
-                    </div>
+                    <form action="{{ route('logout') }}" method="POST">
+                    @csrf
+                        <button class="btn logout">ログアウト</button>
+                    </form>
                 </div>
             </div>
         </div>

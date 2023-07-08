@@ -15,22 +15,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::middleware('auth')->group(function () {
 
-// User
-Route::get('/user', [UserController::class, 'index'])->name('user.index');
-Route::get('/user/create', [UserController::class, 'create'])->name('user.create');
+    Route::get('/', function () {
+        return view('home');
+    });
 
-// Customer
-Route::get('/customer', [CustomerController::class, 'index'])->name('customer.index');
-Route::get('/customer/create', [CustomerController::class, 'create'])->name('customer.create');
+    Route::get('/home', function () {
+        return view('home');
+    })->name('home');
 
-/*
-|--------------------------------------------------------------------------
-| Auth Routes
-|--------------------------------------------------------------------------
-|
-*/
-Route::view('login', 'auth.login');
+    // User
+    Route::get('/user', [UserController::class, 'index'])->name('user.index');
+    Route::get('/user/create', [UserController::class, 'create'])->name('user.create');
+
+    // Customer
+    Route::get('/customer', [CustomerController::class, 'index'])->name('customer.index');
+    Route::get('/customer/create', [CustomerController::class, 'create'])->name('customer.create');
+
+});
+
+require __DIR__.'/auth.php';

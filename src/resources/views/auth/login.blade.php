@@ -1,13 +1,13 @@
 @extends('layouts.guest')
 
 @section('title')
-    ログイン | {{ config('app.name') }} 
+    ログイン | {{ config('app.name') }}
 @endsection
 
 @section('content')
 <main class="layout-login">
     <div class="login-container">
-        <form action="" method="POST">
+        <form action="{{ route('login') }}" method="POST">
             @csrf
 
             <div class="login-title-block">
@@ -19,22 +19,28 @@
                     <label for="userEmailInput" class="form-label">
                         <span class="label-txt">E-mail</span>
                     </label>
-                    <input id="userEmailInput" type="email" class="input-field" name="email" placeholder="">
-                    <div class="invalid-feedback">
-                        <span class="material-symbols-outlined">
-                            error
-                        </span>
-                        <span class="error-msg">
-                            Error message here.
-                        </span>
-                    </div>
+                    <input id="userEmailInput" type="email" class="input-field" name="email" value="{{ old('email') }}">
                 </div>
                 <div class="login-input-row">
                     <label for="userPasswordInput" class="form-label">
                         <span class="label-txt">Password</span>
                     </label>
-                    <input id="userPasswordInput" type="password" class="input-field" name="password" placeholder="">
+                    <input id="userPasswordInput" type="password" class="input-field" name="password">
                 </div>
+
+                @if ($errors->any())
+                @foreach ($errors->all() as $error)
+                <div class="invalid-feedback u-my-3">
+                    <span class="material-symbols-outlined">
+                        error
+                    </span>
+                    <span class="error-msg">
+                        {{ $error }}
+                    </span>
+                </div>
+                @endforeach
+                @endif
+
                 <div class="login-input-row">
                     <button class="btn block-btn btn-login">ログイン</button>
                 </div>
