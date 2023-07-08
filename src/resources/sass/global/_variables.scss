@@ -23,7 +23,7 @@
   --warning: #ffc107;
   --danger: #dc3545;
   --light: #f8f9fa;
-  --dark: #343a40;
+  --dark: #555;
   --link: #007bff;
 
   --inactive: rgba(255, 255, 255, 0.5);
@@ -63,8 +63,8 @@
   /* Layout
   -------------------------*/
   /* colors */
-  --footer-color: var(--navy);
-  --header-color: var(--navy);
+  --footer-color: var(--dark);
+  --header-color: var(--dark);
   --main-color: var(--gray-light);
 
   /* height */
