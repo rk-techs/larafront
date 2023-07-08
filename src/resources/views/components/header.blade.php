@@ -1,5 +1,10 @@
 <header class="layout-header">
     <div class="header-container">
+        <div class="header-logo">
+            <a class="header-logo-link" href="#">
+                <img src="{{ asset('images/logo.svg') }}" alt="logo" class="header-logo-img">
+            </a>
+        </div>
         <div class="header-title">
             <a href="/" class="title-link">{{ config('app.name') }} </a>
         </div>
