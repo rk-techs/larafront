@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    User | {{ config('app.name') }}
+    社員一覧 | {{ config('app.name') }}
 @endsection
 
 @section('content')
@@ -9,11 +9,11 @@
         <div class="main-container">
 
             <div class="content-header-block">
-                <div class="title title-h1">
-                    User
+                <div class="title title-h2">
+                    社員一覧
                 </div>
                 <div>
-                    <a href="{{ route('user.create') }}" class="btn btn-create">新規登録</a>
+                    <a href="{{ route('user.create') }}" class="btn btn-create">社員登録</a>
                 </div>
             </div>
 
@@ -62,14 +62,14 @@
                 <table class="table">
                     <thead class="table-header">
                         <tr class="table-row">
-                            <th class="th-cell">edit</th>
-                            <th class="th-cell">id</th>
-                            <th class="th-cell">name</th>
-                            <th class="th-cell">email</th>
+                            <th class="th-cell">{{-- 操作 --}}</th>
+                            <th class="th-cell">ID</th>
+                            <th class="th-cell">名前</th>
+                            <th class="th-cell">E-mail</th>
                             <th class="th-cell">address</th>
-                            <th class="th-cell">mobile_number</th>
+                            <th class="th-cell">携帯番号</th>
                             <th class="th-cell">user_type</th>
-                            <th class="th-cell">remarks</th>
+                            <th class="th-cell">備考</th>
                             <th class="th-cell">created_at</th>
                             <th class="th-cell">updated_at</th>
                         </tr>

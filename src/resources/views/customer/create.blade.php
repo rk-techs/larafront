@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    取引先 新規登録 | {{ config('app.name') }}
+    取引先 登録 | {{ config('app.name') }}
 @endsection
 
 @section('content')
@@ -9,8 +9,8 @@
         <div class="main-container">
 
             <div class="content-header-block">
-                <div class="title title-h1">
-                    取引先 > 新規登録
+                <div class="title title-h2">
+                    取引先 登録
                 </div>
             </div>
 

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    User Create | {{ config('app.name') }}
+    社員 登録 | {{ config('app.name') }}
 @endsection
 
 @section('content')
@@ -9,8 +9,8 @@
         <div class="main-container">
 
             <div class="content-header-block">
-                <div class="title title-h1">
-                    User > Create
+                <div class="title title-h2">
+                    社員 登録
                 </div>
             </div>
 
@@ -44,6 +44,16 @@
                                 <span class="required-label">必須</span>
                             </label>
                             <input id="userPasswordInput" type="password" class="input-field" name="password" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="userPasswordConfirmationInput" class="form-label">
+                                <span class="label-txt">Password 再確認</span>
+                                <span class="required-label">必須</span>
+                            </label>
+                            <input id="userPasswordConfirmationInput" type="password" class="input-field" name="password_confirmation" autocomplete="new-password">
                         </div>
                     </div>
 

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    取引先 | {{ config('app.name') }}
+    取引先一覧 | {{ config('app.name') }}
 @endsection
 
 @section('content')
@@ -9,11 +9,11 @@
         <div class="main-container">
 
             <div class="content-header-block">
-                <div class="title title-h1">
-                    取引先
+                <div class="title title-h2">
+                    取引先一覧
                 </div>
                 <div>
-                    <a href="{{ route('customer.create') }}" class="btn btn-create">新規登録</a>
+                    <a href="{{ route('customer.create') }}" class="btn btn-create">取引先登録</a>
                 </div>
             </div>
 
@@ -69,7 +69,7 @@
                 <table class="table">
                     <thead class="table-header">
                         <tr class="table-row">
-                            <th class="th-cell">edit</th>
+                            <th class="th-cell">{{-- 操作 --}}</th>
                             <th class="th-cell">name</th>
                         </tr>
                     </thead>

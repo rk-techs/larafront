@@ -16,10 +16,10 @@
 
         <div class="menu-list">
             <div class="menu-item">
-                <a href="{{ route('user.index') }}" class="menu-link">ユーザー</a>
+                <a href="{{ route('user.index') }}" class="menu-link">社員</a>
             </div>
             <div class="menu-item">
-                <a href="{{ route('customer.index') }}" class="menu-link">得意先</a>
+                <a href="{{ route('customer.index') }}" class="menu-link">取引先</a>
             </div>
             <div class="menu-item">
                 <a href="alert" class="menu-link">Alert</a>
