@@ -76,7 +76,7 @@
                     <tbody class="table-body">
 
                         <tr class="table-row">
-                            <td class="td-cell">
+                            <td class="td-cell u-max-w-16">
                                 edit
                             </td>
                             <td class="td-cell">

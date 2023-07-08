@@ -4,10 +4,10 @@
 -------------------------*/
 .form-label {
   align-items: center;
-  color: var(--gray-deep);
   display: flex;
 
   .label-txt {
+    color: var(--dark);
     font-size: 0.9rem;
     font-weight: bold;
     margin-right: 4px;
@@ -19,7 +19,6 @@
   }
 
   .required-label {
-    background-color: var(--white);
     border: 1px solid var(--red);
     border-radius: 16px;
     color: var(--red);
