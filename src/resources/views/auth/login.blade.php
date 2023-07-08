@@ -1,7 +1,7 @@
 @extends('layouts.guest')
 
 @section('title')
-    ログイン
+    ログイン | {{ config('app.name') }} 
 @endsection
 
 @section('content')
@@ -11,7 +11,7 @@
             @csrf
 
             <div class="login-title-block">
-                <h1 class="title title-h1">larafront login</h1>
+                <h1 class="title title-h1">{{ config('app.name') }} login</h1>
             </div>
 
             <div class="login-form-block">

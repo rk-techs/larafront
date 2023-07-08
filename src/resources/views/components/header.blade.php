@@ -1,7 +1,7 @@
 <header class="layout-header">
     <div class="header-container">
         <div class="header-title">
-            <a href="/" class="title-link">larafront</a>
+            <a href="/" class="title-link">{{ config('app.name') }} </a>
         </div>
         <div class="header-nav">
             <div class="nav-item {{ Request::is('/') ? 'active' : '' }}">
