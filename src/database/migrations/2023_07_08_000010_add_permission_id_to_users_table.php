@@ -12,10 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('address')->nullable();
-            $table->string('mobile_number')->nullable();
-            $table->string('user_type')->nullable();
-            $table->text('remarks')->nullable();
+            $table->unsignedBigInteger('permission_id')->after('id');
+            $table->foreign('permission_id')->references('id')->on('permissions');
         });
     }
 
@@ -25,10 +23,8 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('address');
-            $table->dropColumn('mobile_number');
-            $table->dropColumn('user_type');
-            $table->dropColumn('remarks');
+            $table->dropForeign(['permission_id']);
+            $table->dropColumn('permission_id');
         });
     }
 };

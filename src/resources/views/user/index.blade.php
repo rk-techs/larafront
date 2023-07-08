@@ -41,9 +41,6 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-4">
-                            <input type="text" class="input-field" placeholder="住所">
-                        </div>
                         <div class="col">
                             <input type="text" class="input-field" placeholder="備考">
                         </div>
@@ -66,10 +63,10 @@
                             <th class="th-cell">ID</th>
                             <th class="th-cell">名前</th>
                             <th class="th-cell">E-mail</th>
-                            <th class="th-cell">address</th>
                             <th class="th-cell">携帯番号</th>
-                            <th class="th-cell">user_type</th>
+                            <th class="th-cell">入社日</th>
                             <th class="th-cell">備考</th>
+                            <th class="th-cell">権限</th>
                             <th class="th-cell">created_at</th>
                             <th class="th-cell">updated_at</th>
                         </tr>
@@ -89,22 +86,22 @@
                             <td class="td-cell">
                                 {{ $user->email }}
                             </td>
-                            <td class="td-cell ellipsis">
-                                {{ $user->address }}
-                            </td>
                             <td class="td-cell u-min-w-160">
-                                {{ $user->mobile_number }}
+                                {{ $user->employee->mobile_number }}
+                            </td>
+                            <td class="td-cell u-min-w-120">
+                                {{ $user->employee->join_date }}
+                            </td>
+                            <td class="td-cell ellipsis">
+                                {{ $user->employee->remark }}
+                            </td>
+                            <td class="td-cell u-min-w-96">
+                                {{ $user->permission->display_name }}
                             </td>
                             <td class="td-cell">
-                                {{ $user->user_type }}
-                            </td>
-                            <td class="td-cell ellipsis">
-                                {{ $user->remarks }}
-                            </td>
-                            <td class="td-cell ellipsis">
                                 {{ $user->created_at }}
                             </td>
-                            <td class="td-cell ellipsis">
+                            <td class="td-cell">
                                 {{ $user->updated_at }}
                             </td>
                         </tr>
