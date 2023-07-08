@@ -12,7 +12,6 @@
                 <div class="title title-h1">
                     取引先 > 新規登録
                 </div>
-                <button class="btn btn-store">保存</button>
             </div>
 
             <div class="input-block">
@@ -137,6 +136,7 @@
                             </tr>
                         </thead>
                         <tbody class="table-body">
+                            @for ($i = 0; $i < 10; $i++)
                             <tr class="table-row">
 
                                 <td class="td-cell">
@@ -183,6 +183,7 @@
                                     <input type="text" class="input-field">
                                 </td>
                             </tr>
+                            @endfor
                         </tbody>
                     </table>
                 </div>
@@ -192,4 +193,12 @@
 
         </div>
     </main>
+
+    <div class="layout-operation">
+        <div class="operation-container">
+            <button class="btn btn-store mr-3">保存</button>
+            <button class="btn btn-info">キャンセル</button>
+        </div>
+    </div>
+
 @endsection

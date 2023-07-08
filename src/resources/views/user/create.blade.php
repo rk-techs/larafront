@@ -12,7 +12,6 @@
                 <div class="title title-h1">
                     User > Create
                 </div>
-                <button class="btn btn-store">保存</button>
             </div>
 
             <div class="input-block">
@@ -78,6 +77,15 @@
                 </div>
             </div>
 
+
         </div>
     </main>
+
+    <div class="layout-operation">
+        <div class="operation-container">
+            <button class="btn btn-store mr-3">保存</button>
+            <button class="btn btn-info">キャンセル</button>
+        </div>
+    </div>
+
 @endsection
