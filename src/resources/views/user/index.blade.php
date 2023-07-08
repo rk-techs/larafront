@@ -55,12 +55,11 @@
                 </div>
             </div>
 
-            {{-- @if (session('success')) --}}
-            <div class="alert alert-stored u-mb-3">
-                {{-- {{ session('success') }} --}}
-                登録しました。
+            @if (session('success'))
+            <div class="alert alert-stored">
+                {{ session('success') }}
             </div>
-            {{-- @endif --}}
+            @endif
 
             <div class="table-block scrollable-table">
                 <table class="table">
