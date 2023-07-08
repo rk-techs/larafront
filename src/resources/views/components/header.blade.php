@@ -45,8 +45,8 @@
                 </div>
             </div>
         </div>
-        <div id="headerToggleButton" class="mobile-menu">
-            <span id="headerToggleSymbol" class="material-symbols-outlined">menu</span>
+        <div id="headerMobileMenuTrigger" class="header-mobile-menu">
+            <span id="headerMobileMenuSymbol" class="material-symbols-outlined">menu</span>
         </div>
     </div>
 
@@ -54,7 +54,7 @@
 
 {{-- Collapse Menu on Mobile --}}
 <div class="layout-collapse-header">
-    <div id="collapseNav" class="header-collapse-container">
+    <div id="headerCollapseNav" class="header-collapse-container">
         <div class="header-nav">
             <div class="nav-item {{ Request::is('/') ? 'active' : '' }}">
                 <a href="{{ route('home') }}" class="nav-link">HOME</a>

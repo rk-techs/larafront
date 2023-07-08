@@ -1,17 +1,16 @@
 'use strict';
 
-const headerToggleButton = document.getElementById('headerToggleButton');
-const headerToggleSymbol = document.getElementById('headerToggleSymbol');
-const collapseNav = document.getElementById('collapseNav');
+const headerMobileMenuTrigger = document.getElementById('headerMobileMenuTrigger');
+const headerMobileMenuSymbol  = document.getElementById('headerMobileMenuSymbol');
+const headerCollapseNav       = document.getElementById('headerCollapseNav');
 
-headerToggleButton.addEventListener('click', function () {
-  collapseNav.classList.toggle('visible');
+headerMobileMenuTrigger.addEventListener('click', function () {
+  headerCollapseNav.classList.toggle('visible');
 
-
-  if (headerToggleSymbol.textContent == 'menu') {
-    headerToggleSymbol.textContent = 'close';
+  if (headerMobileMenuSymbol.textContent == 'menu') {
+    headerMobileMenuSymbol.textContent = 'close';
   } else {
-    headerToggleSymbol.textContent = 'menu';
+    headerMobileMenuSymbol.textContent = 'menu';
   }
 });
 
