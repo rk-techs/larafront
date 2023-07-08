@@ -28,6 +28,7 @@ Route::middleware('auth')->group(function () {
     // User
     Route::get('/user', [UserController::class, 'index'])->name('user.index');
     Route::get('/user/create', [UserController::class, 'create'])->name('user.create');
+    Route::post('/user', [UserController::class, 'store'])->name('user.store');
 
     // Customer
     Route::get('/customer', [CustomerController::class, 'index'])->name('customer.index');
