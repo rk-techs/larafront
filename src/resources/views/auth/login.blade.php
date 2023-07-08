@@ -30,13 +30,8 @@
 
                 @if ($errors->any())
                 @foreach ($errors->all() as $error)
-                <div class="invalid-feedback u-my-3">
-                    <span class="material-symbols-outlined">
-                        error
-                    </span>
-                    <span class="error-msg">
-                        {{ $error }}
-                    </span>
+                <div class="invalid-feedback u-my-2">
+                    {{ $error }}
                 </div>
                 @endforeach
                 @endif

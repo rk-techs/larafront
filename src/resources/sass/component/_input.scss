@@ -36,7 +36,7 @@ select {
     outline: none;
   }
 
-  &.invalid-input {
+  &.is-invalid {
     border: 1px solid var(--error-txt-color);
 
     &:focus {
@@ -49,4 +49,12 @@ select {
 .input-field[type="radio"] {
   display: inline-block;
   width: auto;
+}
+
+/* Validation
+-------------------------*/
+.invalid-feedback {
+  color: var(--error-txt-color);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
 }

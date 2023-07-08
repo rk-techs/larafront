@@ -9,15 +9,10 @@
                         <span class="label-txt">名前</span>
                         <span class="required-label">必須</span>
                     </label>
-                    <input id="userNameInput" type="text" class="input-field @error('name'){{ 'invalid-input' }}@enderror" name="name" value="{{ old('name') }}">
+                    <input id="userNameInput" type="text" class="input-field @error('name'){{ 'is-invalid' }}@enderror" name="name" value="{{ old('name') }}">
                     @error('name')
                     <div class="invalid-feedback">
-                        <span class="material-symbols-outlined">
-                            error
-                        </span>
-                        <span class="error-msg">
-                            {{ $message }}
-                        </span>
+                        {{ $message }}
                     </div>
                     @enderror
                 </div>
@@ -29,15 +24,10 @@
                         <span class="label-txt">E-mail</span>
                         <span class="required-label">必須</span>
                     </label>
-                    <input id="userEmailInput" type="email" class="input-field @error('email'){{ 'invalid-input' }}@enderror" name="email" value="{{ old('email') }}">
+                    <input id="userEmailInput" type="email" class="input-field @error('email'){{ 'is-invalid' }}@enderror" name="email" value="{{ old('email') }}">
                     @error('email')
                     <div class="invalid-feedback">
-                        <span class="material-symbols-outlined">
-                            error
-                        </span>
-                        <span class="error-msg">
-                            {{ $message }}
-                        </span>
+                        {{ $message }}
                     </div>
                     @enderror
                 </div>
@@ -49,15 +39,10 @@
                         <span class="label-txt">Password</span>
                         <span class="required-label">必須</span>
                     </label>
-                    <input id="userPasswordInput" type="password" class="input-field @error('password'){{ 'invalid-input' }}@enderror" name="password">
+                    <input id="userPasswordInput" type="password" class="input-field @error('password'){{ 'is-invalid' }}@enderror" name="password">
                     @error('password')
                     <div class="invalid-feedback">
-                        <span class="material-symbols-outlined">
-                            error
-                        </span>
-                        <span class="error-msg">
-                            {{ $message }}
-                        </span>
+                        {{ $message }}
                     </div>
                     @enderror
                 </div>
@@ -79,7 +64,7 @@
                         <span class="label-txt">権限</span>
                         <span class="required-label">必須</span>
                     </label>
-                    <select id="userPermissionIdInput" class="input-field @error('permission_id'){{ 'invalid-input' }}@enderror" name="permission_id">
+                    <select id="userPermissionIdInput" class="input-field @error('permission_id'){{ 'is-invalid' }}@enderror" name="permission_id">
                         <option value=""></option>
                         @foreach ($permissions as $permission)
                         <option value="{{ $permission->id }}" @selected( old('permission_id') == $permission->id)>{{ $permission->display_name }}</option>
@@ -87,12 +72,7 @@
                     </select>
                     @error('permission_id')
                     <div class="invalid-feedback">
-                        <span class="material-symbols-outlined">
-                            error
-                        </span>
-                        <span class="error-msg">
-                            {{ $message }}
-                        </span>
+                        {{ $message }}
                     </div>
                     @enderror
                 </div>
@@ -103,15 +83,10 @@
                     <label for="employeeMobileNumberInput" class="form-label">
                         <span class="label-txt">携帯番号</span>
                     </label>
-                    <input id="employeeMobileNumberInput" type="text" class="input-field @error('mobile_number'){{ 'invalid-input' }}@enderror" name="mobile_number" value="{{ old('mobile_number') }}" >
+                    <input id="employeeMobileNumberInput" type="text" class="input-field @error('mobile_number'){{ 'is-invalid' }}@enderror" name="mobile_number" value="{{ old('mobile_number') }}" >
                     @error('mobile_number')
                     <div class="invalid-feedback">
-                        <span class="material-symbols-outlined">
-                            error
-                        </span>
-                        <span class="error-msg">
-                            {{ $message }}
-                        </span>
+                        {{ $message }}
                     </div>
                     @enderror
                 </div>
@@ -122,7 +97,7 @@
                     <label for="employeeRemarkInput" class="form-label">
                         <span class="label-txt">備考</span>
                     </label>
-                    <textarea id="employeeRemarkInput" rows="5" class="input-field @error('remark'){{ 'invalid-input' }}@enderror" name="remark">{{ old('remark') }}</textarea>
+                    <textarea id="employeeRemarkInput" rows="5" class="input-field @error('remark'){{ 'is-invalid' }}@enderror" name="remark">{{ old('remark') }}</textarea>
                 </div>
             </div>
 
