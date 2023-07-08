@@ -11,13 +11,9 @@
   border-radius: 4px;
   cursor: pointer;
   display: inline-block;
-  font-size: 0.9rem;
   padding: 4px 16px;
 
-  &:hover {
-    opacity: 0.8;
-  }
-
+  &:hover,
   &:focus {
     opacity: 0.8;
   }
@@ -26,6 +22,14 @@
     display: block;
     text-align: center;
     width: 100%;
+  }
+
+  &.small-btn {
+    font-size: 0.9rem;
+  }
+
+  &.long-btn {
+    padding: 4px 24px;
   }
 
   &.btn-primary {

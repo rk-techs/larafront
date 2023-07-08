@@ -11,6 +11,8 @@
   --gray-dark: #343a40;
   --navy: #2c3e50;
   --red: #ff0000;
+  --red-light: #f8d7da;
+  --red-deep: #721c24;
   --blue: #0000ff;
   --blue-light: #0080ff;
   --blue-sky: #86b4ff;
@@ -39,7 +41,7 @@
   --login-color: var(--blue-light);
   --edit-color: var(--blue-light);
   --update-color: var(--blue-light);
-  --delete-color: #e74c3c;
+  --delete-color: var(--red-deep);
   --search-color: var(--blue-light);
   --submit-color: var(--gray-deep);
   --info-color: var(--gray-deep);
@@ -48,10 +50,10 @@
   --cancel-color: var(--gray);
 
   /* Alerts */
-  --deleted-bg-color: #f8d7da;
-  --deleted-txt-color: #721c24;
-  --error-bg-color: #f8d7da;
-  --error-txt-color: #721c24;
+  --deleted-bg-color: var(--red-light);
+  --deleted-txt-color: var(--red-deep);
+  --error-bg-color: var(--red-light);
+  --error-txt-color: var(--red-deep);
   --error-txt-color: #d8000c;
   --stored-bg-color: #a2f2d2;
   --stored-txt-color: #087830;
