@@ -50,8 +50,8 @@
                     </div>
                 </div>
                 <div id="collapseSearchFooter" class="search-footer">
-                    <div class="btn-group mr-3">
-                        <button class="btn btn-search mr-3">検索開始</button>
+                    <div class="btn-group u-mr-3">
+                        <button class="btn btn-search u-mr-3">検索開始</button>
                         <button class="btn btn-cancel">リセット</button>
                     </div>
                     <div class="search-info">検索結果 : XX 件</div>

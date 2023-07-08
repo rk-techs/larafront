@@ -30,8 +30,8 @@
                         <div class="col">
                             <div class="date-select">
                                 <input type="date" class="input-field u-w-136">
-                                <span class="mx-1">~</span>
-                                <input type="date" class="input-field mr-2 u-w-136">
+                                <span class="u-mx-1">~</span>
+                                <input type="date" class="input-field u-mr-2 u-w-136">
                                 <select name="" id="" class="input-field u-w-96">
                                     <option value="">今日</option>
                                     <option selected value="">今月</option>
@@ -57,8 +57,8 @@
                     </div>
                 </div>
                 <div id="collapseSearchFooter" class="search-footer">
-                    <div class="btn-group mr-3">
-                        <button class="btn btn-search mr-3">検索開始</button>
+                    <div class="btn-group u-mr-3">
+                        <button class="btn btn-search u-mr-3">検索開始</button>
                         <button class="btn btn-cancel">リセット</button>
                     </div>
                     <div class="search-info">検索結果 : XX 件</div>
