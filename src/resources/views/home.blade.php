@@ -48,11 +48,11 @@
             <div class="menu-item">
                 <a href="table" class="menu-link">Table</a>
             </div>
-            <div class="menu-item">
-                <a href="" class="menu-link">在庫</a>
-            </div>
         </div>
 
     </div>
 </main>
+
+@include('components.footer')
+
 @endsection

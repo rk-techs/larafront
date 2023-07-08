@@ -18,8 +18,6 @@
 
     @yield('content')
 
-    @include('components.footer')
-
     @include('components.mask')
 
     @stack('script')
