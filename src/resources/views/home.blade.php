@@ -21,30 +21,6 @@
             <div class="menu-item">
                 <a href="{{ route('customer.index') }}" class="menu-link">取引先</a>
             </div>
-            <div class="menu-item">
-                <a href="alert" class="menu-link">Alert</a>
-            </div>
-            <div class="menu-item">
-                <a href="button" class="menu-link">Button</a>
-            </div>
-            <div class="menu-item">
-                <a href="form" class="menu-link">Form</a>
-            </div>
-            <div class="menu-item">
-                <a href="heading" class="menu-link">Heading</a>
-            </div>
-            <div class="menu-item">
-                <a href="icon" class="menu-link">Icon</a>
-            </div>
-            <div class="menu-item">
-                <a href="list" class="menu-link">List</a>
-            </div>
-            <div class="menu-item">
-                <a href="link" class="menu-link">Link</a>
-            </div>
-            <div class="menu-item">
-                <a href="table" class="menu-link">Table</a>
-            </div>
         </div>
 
     </div>
