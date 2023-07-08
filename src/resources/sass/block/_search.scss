@@ -40,12 +40,8 @@
   .search-footer {
     padding: 16px var(--padding-x);
 
-    .btn-group {
-      justify-content: end;
-    }
     .search-info {
       margin-top: 16px;
-      text-align: right;
     }
 
     &.collapse {
@@ -55,9 +51,7 @@
     @include pc-screen() {
       align-items: center;
       display: flex;
-      flex-direction: row-reverse;
       flex-wrap: wrap;
-      justify-content: end;
 
       .search-info {
         margin-right: 16px;

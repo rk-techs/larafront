@@ -27,6 +27,21 @@
                 </div>
                 <div id="collapseSearchBody" class="search-body">
                     <div class="row">
+                        <div class="col">
+                            <div class="date-select">
+                                <input type="date" class="input-field u-w-136">
+                                <span class="mx-1">~</span>
+                                <input type="date" class="input-field mr-2 u-w-136">
+                                <select name="" id="" class="input-field u-w-96">
+                                    <option value="">今日</option>
+                                    <option selected value="">今月</option>
+                                    <option value="">今年</option>
+                                    <option value="">全期間</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="col-1">
                             <input type="text" class="input-field" placeholder="ID">
                         </div>
@@ -42,9 +57,9 @@
                     </div>
                 </div>
                 <div id="collapseSearchFooter" class="search-footer">
-                    <div class="btn-group">
-                        <button class="btn btn-cancel mr-3">リセット</button>
-                        <button class="btn btn-search">検索開始</button>
+                    <div class="btn-group mr-3">
+                        <button class="btn btn-search mr-3">検索開始</button>
+                        <button class="btn btn-cancel">リセット</button>
                     </div>
                     <div class="search-info">検索結果 : XX 件</div>
                 </div>
