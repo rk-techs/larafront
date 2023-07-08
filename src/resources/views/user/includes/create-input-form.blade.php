@@ -1,7 +1,7 @@
 <form id="inputForm" action="{{ route('user.store') }}" method="POST">
     @csrf
-    <div class="input-block">
-        <div class="input-body">
+    <div class="input-form-block">
+        <div class="input-form-body">
 
             <div class="row">
                 <div class="col">

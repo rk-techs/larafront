@@ -14,8 +14,8 @@
                 </div>
             </div>
 
-            <div class="input-block">
-                <div class="input-body row">
+            <div class="input-form-block">
+                <div class="input-form-body row">
 
                     {{-- First Columm --}}
                     <div class="col-6">
@@ -118,8 +118,8 @@
             </div>
 
             {{-- 明細 --}}
-            <div class="input-block">
-                <div class="input-table table-block scrollable-table">
+            <div class="input-form-block">
+                <div class="input-form-table table-block scrollable-table">
                     <table class="table">
                         <thead class="table-header">
                             <tr class="table-row">
