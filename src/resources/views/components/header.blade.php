@@ -16,6 +16,7 @@
             <div class="nav-item"><a href="" class="nav-link">メニュー2</a></div>
             <div class="nav-item"><a href="" class="nav-link">メニュー3</a></div>
             <div class="nav-item"><a href="" class="nav-link">メニュー4</a></div>
+            <div class="nav-item"><a href="" class="nav-link">メニュー5</a></div>
         </div>
         <div id="profileButton" class="icon-block profile-block">
             <a href="#" class="icon-link icon-inner">

@@ -35,6 +35,8 @@
         align-items: center;
         color: var(--inactive);
         display: flex;
+        overflow: hidden;
+        white-space: nowrap;
       }
 
       .nav-item {
