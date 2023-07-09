@@ -24,7 +24,7 @@
             <div class="btn-group">
                 <button id="inputFormTrigger" class="btn btn-update u-mr-3">更新</button>
                 <button class="btn btn-info">キャンセル</button>
-                <form action="{{ route('user.destroy', ['user' => $user]) }}" method="POST" class="u-ml-auto">
+                <form action="{{ route('user.destroy', ['id' => $user->id]) }}" method="POST" class="u-ml-auto">
                     @csrf
                     @method('DELETE')
                     <button class="icon-block">

@@ -18,7 +18,7 @@
             @foreach ($users as $user)
             <tr class="table-row">
                 <td class="td-cell">
-                    <a href="{{ route('user.edit', ['user' => $user->id]) }}" class="link">edit</a>
+                    <a href="{{ route('user.edit', ['id' => $user->id]) }}" class="link">edit</a>
                 </td>
                 <td class="td-cell u-max-w-80">
                     {{ $user->id }}

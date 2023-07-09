@@ -68,20 +68,21 @@ class UserController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(User $user)
+    public function edit(string $id)
     {
         return view('user.edit', [
             'permissions' => Permission::all(),
-            'user' => $user,
+            'user' => User::find($id),
         ]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateUserRequest $request, User $user)
+    public function update(UpdateUserRequest $request, string $id)
     {
         $inputs = $request->all();
+        $user   = User::find($id);
 
         $user->update([
             'permission_id' => $inputs['permission_id'],
@@ -103,8 +104,10 @@ class UserController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(User $user)
+    public function destroy(string $id)
     {
+        $user = User::find($id);
+        
         $user->employee->delete();
         $user->delete();
 
