@@ -102,12 +102,12 @@
   }
 }
 
-.profile-block {
+.user-info {
   position: relative;
   margin-left: auto;
 }
 
-.profile-modal {
+.user-info-modal {
   background-color: var(--white);
   border-radius: 4px;
   box-shadow: 0 0 8px var(--gray-dark);
@@ -125,12 +125,12 @@
   }
 }
 
-.profile-modal-header {
+.user-info-modal-header {
   border-bottom: 1px solid var(--gray);
   padding: 16px;
 }
 
-.profile-modal-body {
+.user-info-modal-body {
   border-bottom: 1px solid var(--gray);
 
   .profile-menu {
@@ -139,7 +139,7 @@
   }
 }
 
-.profile-modal-footer {
+.user-info-modal-footer {
   border-radius: 0 0 4px 4px;
   color: var(--red);
   padding-bottom: 8px;

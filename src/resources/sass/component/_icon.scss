@@ -1,25 +1,16 @@
 @use '../global' as *;
 
 .icon-block {
-  display: inline-block;
-}
-
-.icon-link {
   align-items: center;
   color: inherit;
   display: flex;
 
   &:hover {
+    cursor: pointer;
     opacity: 0.8;
   }
 
-  .icon {
-    align-items: center;
-    display: flex;
-    margin-right: 4px;
-  }
-
-  .material-symbols-outlined {
-    // 必要に応じてアイコンのスタイルを調整
+  .icon-label {
+    margin-left: 4px;
   }
 }
