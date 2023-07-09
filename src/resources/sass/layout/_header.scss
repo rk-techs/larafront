@@ -140,11 +140,13 @@
 }
 
 .user-info-modal-footer {
-  border-radius: 0 0 4px 4px;
-  color: var(--red);
-  padding-bottom: 8px;
-  padding-top: 8px;
-  @include hover-effect;
+  .logout-form-wrapper {
+    border-radius: 0 0 4px 4px;
+    color: var(--red);
+    padding-bottom: 8px;
+    padding-top: 8px;
+    @include hover-effect;
+  }
 }
 
 /* Collapse header

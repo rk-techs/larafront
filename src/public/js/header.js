@@ -41,3 +41,15 @@ pageMask.addEventListener('click', () => {
   pageMask.classList.remove('show');
   htmlBody.classList.remove('modal-open');
 });
+
+/*
+---------------------------------------
+| Logout
+---------------------------------------
+*/
+const logoutFormTrigger = document.getElementById('logoutFormTrigger');
+const logoutForm        = document.getElementById('logoutForm');
+
+logoutFormTrigger.addEventListener('click', () => {
+  logoutForm.submit();
+});

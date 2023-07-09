@@ -37,10 +37,12 @@
                     <div class="profile-menu">申請</div>
                 </div>
                 <div class="user-info-modal-footer">
-                    <form action="{{ route('logout') }}" method="POST">
-                    @csrf
-                        <button class="btn logout">ログアウト</button>
-                    </form>
+                    <div id="logoutFormTrigger" class="logout-form-wrapper">
+                        <form id="logoutForm" action="{{ route('logout') }}" method="POST">
+                        @csrf
+                            ログアウト
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
