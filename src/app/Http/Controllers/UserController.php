@@ -22,10 +22,14 @@ class UserController extends Controller
         $request->validate([
             'id' => 'nullable|integer|min:1',
             'keyword' => 'nullable|string|max:255',
+            'sortField' => 'nullable|in:id,name,created_at',
+            'sortType'  => 'nullable|in:asc,desc',
         ]);
 
         $idSearch      = $request->get('id');
         $keywordSearch = $request->get('keyword');
+        $sortField     = $request->get('sortField');
+        $sortType      = $request->get('sortType');
 
         $users = User::query();
 
@@ -36,6 +40,10 @@ class UserController extends Controller
         if ($keywordSearch) {
             $users = $users->where('name', 'like', "%{$keywordSearch}%")
                            ->orWhere('email', 'like', "%{$keywordSearch}%");
+        }
+
+        if ($sortField && $sortType) {
+            $users = $users->orderBy($sortField, $sortType);
         }
 
         $users = $users->get();

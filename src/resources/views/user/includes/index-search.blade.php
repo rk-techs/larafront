@@ -33,6 +33,19 @@
         @if (!empty(request()->query()))
         <div class="search-info">検索結果 : {{ $count }} 件</div>
         @endif
+        {{-- Sort --}}
+        <div class="sort-field">
+            <label class="form-label u-mr-2">並び順:</label>
+            <select name="sortField" class="input-field u-w-80">
+                <option value="id" @selected(request('sortField') == 'id')>ID</option>
+                <option value="name" @selected(request('sortField') == 'name')>名前</option>
+                <option value="created_at" @selected(request('sortField') == 'created_at')>登録日</option>
+            </select>
+            <select name="sortType" class="input-field u-w-80">
+                <option value="asc" @selected(request('sortType') == 'asc')>昇順</option>
+                <option value="desc" @selected(request('sortType') == 'desc')>降順</option>
+            </select>
+        </div>
     </div>
 </form>
 </div>

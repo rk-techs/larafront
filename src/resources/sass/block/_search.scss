@@ -67,3 +67,22 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+/* Sort */
+.sort-field {
+  margin-top: 16px;
+  @include pc-screen() {
+    margin-top: 0;
+  }
+
+  .form-label {
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .input-field {
+    display: inline-block;
+  }
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+}
