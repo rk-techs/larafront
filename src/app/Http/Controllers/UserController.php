@@ -8,6 +8,7 @@ use App\Models\Employee;
 use App\Models\Permission;
 use App\Models\User;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
 
@@ -16,12 +17,33 @@ class UserController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('user.index', [
-            'users' => User::all(),
+        $request->validate([
+            'id' => 'nullable|integer|min:1',
+            'keyword' => 'nullable|string|max:255',
         ]);
+
+        $idSearch      = $request->get('id');
+        $keywordSearch = $request->get('keyword');
+
+        $users = User::query();
+
+        if ($idSearch) {
+            $users = $users->where('id', $idSearch);
+        }
+
+        if ($keywordSearch) {
+            $users = $users->where('name', 'like', "%{$keywordSearch}%")
+                           ->orWhere('email', 'like', "%{$keywordSearch}%");
+        }
+
+        $users = $users->get();
+        $count = $users->count();
+
+        return view('user.index', ['users' => $users, 'count' => $count]);
     }
+
 
     /**
      * Show the form for creating a new resource.
