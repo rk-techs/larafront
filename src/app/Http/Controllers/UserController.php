@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreUserRequest;
+use App\Http\Requests\UpdateUserRequest;
 use App\Models\Employee;
 use App\Models\Permission;
 use App\Models\User;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
@@ -68,17 +68,36 @@ class UserController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(User $user)
     {
-        //
+        return view('user.edit', [
+            'permissions' => Permission::all(),
+            'user' => $user,
+        ]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(UpdateUserRequest $request, User $user)
     {
-        //
+        $inputs = $request->all();
+
+        $user->update([
+            'permission_id' => $inputs['permission_id'],
+            'name'          => $inputs['name'],
+            'email'         => $inputs['email'],
+        ]);
+
+        $user->employee->update([
+            'user_id'       => $user->id,
+            'mobile_number' => $inputs['mobile_number'],
+            'remark'        => $inputs['remark'],
+        ]);
+
+        return redirect()
+                ->route('user.index')
+                ->with('success', '更新しました。');
     }
 
     /**
