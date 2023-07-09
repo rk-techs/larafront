@@ -25,10 +25,6 @@
     width: 100%;
   }
 
-  &.small-btn {
-    font-size: 0.9rem;
-  }
-
   &.long-btn {
     padding: 4px 24px;
   }
@@ -103,4 +99,18 @@
     color: var(--white);
   }
 
+}
+
+.btn-s {
+  font-size: 0.9rem;
+  padding: 0 4px;
+  display: block;
+  white-space: nowrap;
+  background-color: var(--gray-light);
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
 }

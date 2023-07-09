@@ -3,7 +3,7 @@
         <thead class="table-header">
             <tr class="table-row">
                 <th class="th-cell">{{-- 操作 --}}</th>
-                <th class="th-cell">ID</th>
+                <th class="th-cell u-txt-center">ID</th>
                 <th class="th-cell">名前</th>
                 <th class="th-cell">E-mail</th>
                 <th class="th-cell">携帯番号</th>
@@ -18,12 +18,12 @@
             @foreach ($users as $user)
             <tr class="table-row">
                 <td class="td-cell">
-                    <a href="{{ route('user.edit', ['id' => $user->id]) }}" class="link">edit</a>
+                    <a href="{{ route('user.edit', ['id' => $user->id]) }}" class="btn-s">編集</a>
                 </td>
-                <td class="td-cell u-max-w-80">
+                <td class="td-cell u-max-w-80 u-txt-center">
                     {{ $user->id }}
                 </td>
-                <td class="td-cell u-min-w-120">
+                <td class="td-cell u-min-w-160">
                     {{ $user->name }}
                 </td>
                 <td class="td-cell">
@@ -41,10 +41,10 @@
                 <td class="td-cell u-min-w-96">
                     {{ $user->permission->display_name }}
                 </td>
-                <td class="td-cell">
+                <td class="td-cell u-min-w-200">
                     {{ $user->created_at }}
                 </td>
-                <td class="td-cell">
+                <td class="td-cell u-min-w-200">
                     {{ $user->updated_at }}
                 </td>
             </tr>
