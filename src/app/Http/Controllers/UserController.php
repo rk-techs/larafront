@@ -7,7 +7,9 @@ use App\Http\Requests\UpdateUserRequest;
 use App\Models\Employee;
 use App\Models\Permission;
 use App\Models\User;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Log;
 
 class UserController extends Controller
 {
@@ -106,8 +108,13 @@ class UserController extends Controller
      */
     public function destroy(string $id)
     {
-        $user = User::find($id);
-        
+        try {
+            $user = User::findOrFail($id);
+        } catch (ModelNotFoundException $e) {
+            Log::error($e->getMessage() . ' in UserController');
+            return redirect()->back()->with('error', 'User not found...');
+        }
+
         $user->employee->delete();
         $user->delete();
 
