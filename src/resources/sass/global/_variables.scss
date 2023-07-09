@@ -50,15 +50,13 @@
   --cancel-color: var(--gray);
 
   /* Alerts */
+  --success-bg-color: #08b94e1a;
+  --success-txt-color: #08b94e;
   --deleted-bg-color: var(--red-light);
   --deleted-txt-color: var(--red-deep);
   --error-bg-color: var(--red-light);
   --error-txt-color: var(--red-deep);
   --error-txt-color: #d8000c;
-  --stored-bg-color: #08b94e1a;
-  --stored-txt-color: #08b94e;
-  --updated-bg-color: #a1d6f5;
-  --updated-txt-color: #084d79;
   --warning-bg-color: #f9e79f;
   --warning-txt-color: #7a650c;
 

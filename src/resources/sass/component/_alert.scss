@@ -5,14 +5,9 @@
   margin-bottom: 16px;
   padding: 8px;
 
-  &.alert-stored {
-    background-color: var(--stored-bg-color);
-    color: var(--stored-txt-color);
-  }
-
-  &.alert-updated {
-    background-color: var(--updated-bg-color);
-    color: var(--updated-txt-color);
+  &.alert-success {
+    background-color: var( --success-bg-color);
+    color: var( --success-txt-color);
   }
 
   &.alert-deleted {

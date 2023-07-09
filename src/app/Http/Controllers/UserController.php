@@ -110,6 +110,6 @@ class UserController extends Controller
 
         return redirect()
         ->route('user.index')
-        ->with('success', '削除しました。');
+        ->with('deleted', '削除しました。');
     }
 }
