@@ -31,7 +31,7 @@
         </div>
         {{-- Search Result --}}
         @if (!empty(request()->query()))
-        <div class="search-info">検索結果 : {{ $count }} 件</div>
+        <div class="search-info u-fade-in">検索結果 : {{ $count }} 件</div>
         @endif
         {{-- Sort --}}
         <div class="sort-field">
