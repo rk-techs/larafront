@@ -72,9 +72,16 @@ class UserController extends Controller
      */
     public function edit(string $id)
     {
+        try {
+            $user = User::findOrFail($id);
+        } catch (ModelNotFoundException $e) {
+            Log::error($e->getMessage() . ' in UserController');
+            return redirect()->back()->with('error', 'User not found...');
+        }
+
         return view('user.edit', [
             'permissions' => Permission::all(),
-            'user' => User::find($id),
+            'user' => $user,
         ]);
     }
 
@@ -84,7 +91,12 @@ class UserController extends Controller
     public function update(UpdateUserRequest $request, string $id)
     {
         $inputs = $request->all();
-        $user   = User::find($id);
+        try {
+            $user = User::findOrFail($id);
+        } catch (ModelNotFoundException $e) {
+            Log::error($e->getMessage() . ' in UserController');
+            return redirect()->back()->with('error', 'User not found...');
+        }
 
         $user->update([
             'permission_id' => $inputs['permission_id'],
