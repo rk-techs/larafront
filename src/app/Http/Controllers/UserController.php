@@ -46,8 +46,8 @@ class UserController extends Controller
             $users = $users->orderBy($sortField, $sortType);
         }
 
-        $users = $users->get();
         $count = $users->count();
+        $users = $users->simplePaginate(10)->withQueryString();;
 
         return view('user.index', ['users' => $users, 'count' => $count]);
     }
