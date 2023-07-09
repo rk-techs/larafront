@@ -5,8 +5,15 @@
   border-top: 1px solid var(--gray-medium);
   bottom: 0;
   position: sticky;
-  
-  .operation-container {
-    padding: 24px;
-  }
+}
+
+.operation-container {
+  align-items: center;
+  display: flex;
+  padding: 24px;
+}
+
+.delete-form-wrapper {
+  color: var(--white);
+  margin-left: auto;
 }

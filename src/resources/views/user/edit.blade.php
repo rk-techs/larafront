@@ -27,13 +27,16 @@
 
     <div class="layout-operation">
         <div class="operation-container">
-            <div class="btn-group">
-                <button id="inputFormTrigger" class="btn btn-update u-mr-3">更新</button>
-                <button class="btn btn-secondary">キャンセル</button>
-                <form action="{{ route('user.destroy', ['id' => $user->id]) }}" method="POST" class="u-ml-auto">
+            <button id="inputFormTrigger" class="btn btn-update u-mr-3">更新</button>
+            <button class="btn btn-secondary">キャンセル</button>
+            <div class="delete-form-wrapper">
+                @push('script')
+                <script src="{{ asset('js/delete-form.js') }}"></script>
+                @endpush
+                <form id="deleteForm" action="{{ route('user.destroy', ['id' => $user->id]) }}" method="POST">
                     @csrf
                     @method('DELETE')
-                    <button class="icon-block">
+                    <button id="deleteFormTrigger" class="icon-block">
                         <span class="material-symbols-outlined">
                             delete
                         </span>
