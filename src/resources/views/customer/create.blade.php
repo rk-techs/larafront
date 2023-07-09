@@ -189,7 +189,7 @@
     <div class="layout-operation">
         <div class="operation-container">
             <button class="btn btn-store u-mr-3">保存</button>
-            <button class="btn btn-info">キャンセル</button>
+            <button class="btn btn-secondary">キャンセル</button>
         </div>
     </div>
 

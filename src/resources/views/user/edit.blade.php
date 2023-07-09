@@ -29,7 +29,7 @@
         <div class="operation-container">
             <div class="btn-group">
                 <button id="inputFormTrigger" class="btn btn-update u-mr-3">更新</button>
-                <button class="btn btn-info">キャンセル</button>
+                <button class="btn btn-secondary">キャンセル</button>
                 <form action="{{ route('user.destroy', ['id' => $user->id]) }}" method="POST" class="u-ml-auto">
                     @csrf
                     @method('DELETE')

@@ -8,29 +8,44 @@
 
 /* Button
 -------------------------*/
-.btn {
+.btn,
+.btn-sm,
+.btn-block {
+  background-color: var(--gray-light);
   border-radius: 4px;
   cursor: pointer;
   display: inline-block;
   padding: 4px 16px;
+  white-space: nowrap;
 
-  &:hover,
-  &:focus {
+  &:focus,
+  &:hover {
     opacity: 0.8;
   }
+}
 
-  &.block-btn {
-    display: block;
-    text-align: center;
-    width: 100%;
-  }
+.btn-sm {
+  font-size: 0.9rem;
+  padding: 0 4px;
+}
 
-  &.long-btn {
-    padding: 4px 24px;
-  }
+.btn-block {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.btn,
+.btn-sm,
+.btn-block {
 
   &.btn-primary {
     background-color: var(--primary);
+    color: var(--white);
+  }
+
+  &.btn-secondary {
+    background-color: var(--secondary);
     color: var(--white);
   }
 
@@ -62,55 +77,5 @@
   &.btn-delete {
     background-color: var(--delete-color);
     color: var(--white);
-  }
-
-  &.btn-search {
-    background-color: var(--search-color);
-    color: var(--white);
-  }
-
-  &.btn-submit {
-    background-color: var(--submit-color);
-    color: var(--white);
-  }
-
-  &.btn-info {
-    background-color: var(--info-color);
-    color: var(--white);
-  }
-
-  &.btn-index {
-    background-color: var(--index-color);
-    color: var(--white);
-  }
-
-  &.btn-back {
-    background-color: var(--back-color);
-    color: var(--black);
-  }
-
-  &.btn-cancel {
-    background-color: var(--cancel-color);
-    color: var(--black);
-  }
-
-  &.btn-login {
-    background-color: var(--login-color);
-    color: var(--white);
-  }
-
-}
-
-.btn-s {
-  font-size: 0.9rem;
-  padding: 0 4px;
-  display: block;
-  white-space: nowrap;
-  background-color: var(--gray-light);
-  border-radius: 4px;
-
-  &:hover,
-  &:focus {
-    opacity: 0.8;
   }
 }

@@ -18,8 +18,8 @@
   --blue-sky: #86b4ff;
   --green: #2ecc71;
 
-  --primary: #0080ff;
-  --secondary: #6c757d;
+  --primary: var(--blue-light);
+  --secondary: var(--gray-deep);
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
@@ -42,12 +42,6 @@
   --edit-color: var(--blue-light);
   --update-color: var(--blue-light);
   --delete-color: var(--red-deep);
-  --search-color: var(--blue-light);
-  --submit-color: var(--gray-deep);
-  --info-color: var(--gray-deep);
-  --index-color: var(--gray-deep);
-  --back-color: var(--gray);
-  --cancel-color: var(--gray);
 
   /* Alerts */
   --success-bg-color: #08b94e1a;

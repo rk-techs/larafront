@@ -37,7 +37,7 @@
                 @endif
 
                 <div class="login-input-row">
-                    <button class="btn block-btn btn-login">ログイン</button>
+                    <button class="btn-block btn-primary">ログイン</button>
                 </div>
             </div>
 
