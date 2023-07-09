@@ -3,36 +3,31 @@
 .table-block {
   border-radius: 4px;
 
-  &.scrollable-table {
-    overflow-x: auto;
+  &.is-scrollable {
+    overflow-x: scroll;
     overflow-y: scroll;
     max-height: 90vh;
   }
 }
 
 .table {
-  --table-header-bg-color: #ddd;
-  --table-header-border-color: #ddd;
-  --table-row-border-color: #ddd;
-
   background-color: var(--white);
   border-collapse: collapse;
   text-align: left;
   width: 100%;
 
-  &.fixed-table {
+  &.is-fixed {
     table-layout: fixed;
   }
 }
 
 .table-header {
-  background-color: var(--table-header-bg-color);
+  background-color: var(--gray-medium);
   position: sticky;
   top: 0;
 }
 
 .th-cell {
-  border-bottom: 2px solid var(--table-header-border-color);
   border-right: 1px solid var(--gray-light);
   font-weight: bold;
   padding: 8px 16px;
@@ -41,7 +36,7 @@
 
 .table-row {
   &:not(:last-child) {
-    border-bottom: 1px solid var(--table-row-border-color);
+    border-bottom: 1px solid var(--gray-medium);
   }
 }
 
@@ -91,14 +86,14 @@
 .th-cell,
 .td-cell {
 
-  &.ellipsis {
+  &.is-ellipsis {
     max-width: 240px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
 
-  &.hide-on-mobile {
+  &.is-hidden-mobile {
     display: none;
 
     @include pc-screen() {

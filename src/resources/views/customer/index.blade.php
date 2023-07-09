@@ -65,7 +65,7 @@
                 </div>
             </div>
 
-            <div class="table-block scrollable-table">
+            <div class="table-block is-scrollable">
                 <table class="table">
                     <thead class="table-header">
                         <tr class="table-row">

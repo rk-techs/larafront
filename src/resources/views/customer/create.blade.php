@@ -119,7 +119,7 @@
 
             {{-- 明細 --}}
             <div class="input-form-block">
-                <div class="input-form-table table-block scrollable-table">
+                <div class="input-form-table table-block is-scrollable">
                     <table class="table">
                         <thead class="table-header">
                             <tr class="table-row">

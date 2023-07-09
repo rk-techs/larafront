@@ -1,4 +1,4 @@
-<div class="table-block scrollable-table">
+<div class="table-block is-scrollable">
     <table class="table">
         <thead class="table-header">
             <tr class="table-row">
@@ -35,7 +35,7 @@
                 <td class="td-cell u-min-w-120">
                     {{ $user->employee->join_date }}
                 </td>
-                <td class="td-cell ellipsis">
+                <td class="td-cell is-ellipsis">
                     {{ $user->employee->remark }}
                 </td>
                 <td class="td-cell u-min-w-96">
