@@ -36,8 +36,6 @@ class UserSeeder extends Seeder
             'permission_id' => Permission::where('name', 'staff')->first()->id,
         ]);
 
-        User::factory(10)->create([
-            'permission_id' => Permission::inRandomOrder()->first()->id,
-        ]);
+        User::factory(30)->create();
     }
 }

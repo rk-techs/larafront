@@ -17,6 +17,7 @@ class EmployeeFactory extends Factory
     public function definition(): array
     {
         return [
+            'mobile_number'     => $this->faker->optional()->phoneNumber,
             'join_date'         => $this->faker->date,
             'resignation_date'  => $this->faker->optional()->date,
             'remark'            => $this->faker->optional()->sentence,
