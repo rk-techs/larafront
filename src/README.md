@@ -19,7 +19,7 @@ CSS設計方針は**OOCSS**や**SMACSS**、**FLOCSS**を参考にしつつ自己
 例えば、以下のボタンは最小要素のコンポーネントだが、
 
 ```html
-<button class="btn btn-search">検索</button>
+<button class="btn btn-primary">検索</button>
 ````
 
 次のラベルはコンポーネント同士を組み合わせて一つのコンポーネントとする。
@@ -42,13 +42,10 @@ CSS設計方針は**OOCSS**や**SMACSS**、**FLOCSS**を参考にしつつ自己
   - 全てのブロック内（全てのコンポーネント内）で再利用が可能
   - 親要素はブロック、またはコンポーネントのみとする。（コンテナ直下に配置しない）
 
-
 構造と装飾を分離してマルチクラスにする。
 
 - 構造: `display`, `width`, `height`, `text-align`, etc...
 - 装飾: `background-color`, `border-color`, `color`, `font-weight`, etc...
-
-
 
 ## Quick Guide
 
