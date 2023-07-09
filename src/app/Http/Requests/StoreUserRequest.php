@@ -36,6 +36,7 @@ class StoreUserRequest extends FormRequest
             'password' => [
                 'required',
                 'string',
+                'confirmed',
             ],
             'permission_id' => [
                 'required',

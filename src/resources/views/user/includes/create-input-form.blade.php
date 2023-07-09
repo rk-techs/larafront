@@ -54,7 +54,12 @@
                         <span class="label-txt">Password 再確認</span>
                         <span class="required-label">必須</span>
                     </label>
-                    <input id="userPasswordConfirmationInput" type="password" class="input-field" name="password_confirmation" autocomplete="new-password">
+                    <input id="userPasswordConfirmationInput" type="password" class="input-field" name="password_confirmation" autocomplete="new-password" placeholder="確認">
+                    @error('password_confirmation')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                    @enderror
                 </div>
             </div>
 
