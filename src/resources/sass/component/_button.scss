@@ -1,6 +1,7 @@
 @use '../global' as *;
 
 .btn-group {
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
 }
