@@ -27,6 +27,13 @@
                     </label>
                     <input id="userPasswordInput" type="password" class="input-field" name="password">
                 </div>
+                {{-- Remember Me --}}
+                <div class="login-input-row">
+                    <label for="userRememberMeInput" class="form-label">
+                        <input id="userRememberMeInput" type="checkbox" class="input-field" name="remember">
+                        <span class="label-txt">Remember me</span>
+                    </label>
+                </div>
 
                 @if ($errors->any())
                 @foreach ($errors->all() as $error)
