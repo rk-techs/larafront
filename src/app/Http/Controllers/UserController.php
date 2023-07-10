@@ -106,7 +106,7 @@ class UserController extends Controller
             $user = User::findOrFail($id);
         } catch (ModelNotFoundException $e) {
             Log::error($e->getMessage() . ' in UserController');
-            return redirect()->back()->with('error', 'User not found...');
+            return redirect()->route('user.index')->with('error', 'User not found...');
         }
 
         return view('user.edit', [
@@ -125,7 +125,7 @@ class UserController extends Controller
             $user = User::findOrFail($id);
         } catch (ModelNotFoundException $e) {
             Log::error($e->getMessage() . ' in UserController');
-            return redirect()->back()->with('error', 'User not found...');
+            return redirect()->route('user.index')->with('error', 'User not found...');
         }
 
         $user->update([
@@ -154,7 +154,7 @@ class UserController extends Controller
             $user = User::findOrFail($id);
         } catch (ModelNotFoundException $e) {
             Log::error($e->getMessage() . ' in UserController');
-            return redirect()->back()->with('error', 'User not found...');
+            return redirect()->route('user.index')->with('error', 'User not found...');
         }
 
         $user->employee->delete();

@@ -14,12 +14,6 @@
                 </div>
             </div>
 
-            @if (session('error'))
-            <div class="alert alert-error">
-                {{ session('error') }}
-            </div>
-            @endif
-
             @include('user.includes.edit-input-form')
 
         </div>
