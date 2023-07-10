@@ -47,7 +47,7 @@ class UserController extends Controller
         }
 
         $count = $users->count();
-        $users = $users->simplePaginate(10)->withQueryString();;
+        $users = $users->simplePaginate(50)->withQueryString();;
 
         return view('user.index', ['users' => $users, 'count' => $count]);
     }

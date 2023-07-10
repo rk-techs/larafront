@@ -31,10 +31,10 @@
             </div>
             @endif
 
+            @include('user.includes.index-table')
+
             {{-- Pagination Result --}}
             {{ $users->links('vendor.pagination.my-simple-default') }}
-
-            @include('user.includes.index-table')
 
         </div>
     </main>
