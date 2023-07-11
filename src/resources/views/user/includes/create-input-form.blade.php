@@ -69,7 +69,7 @@
                     </label>
                     <select id="userPermissionIdInput"
                         class="form-select @error('permission_id'){{ 'is-invalid' }}@enderror" name="permission_id">
-                        <option value=""></option>
+                        <option hidden value="">選択してください</option>
                         @foreach ($permissions as $permission)
                             <option value="{{ $permission->id }}" @selected(old('permission_id') == $permission->id)>
                                 {{ $permission->display_name }}</option>
