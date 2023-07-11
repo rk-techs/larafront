@@ -18,7 +18,8 @@ select {
   margin-bottom: 16px;
 }
 
-.input-field {
+.input-field,
+.form-select {
   background-color: var(--white);
   border: 1px solid var(--gray-medium);
   border-radius: 4px;

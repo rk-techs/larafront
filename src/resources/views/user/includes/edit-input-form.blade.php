@@ -41,7 +41,7 @@
                         <span class="required-label">必須</span>
                     </label>
                     <select id="userPermissionIdInput"
-                        class="input-field @error('permission_id'){{ 'is-invalid' }}@enderror" name="permission_id">
+                        class="form-select @error('permission_id'){{ 'is-invalid' }}@enderror" name="permission_id">
                         <option value=""></option>
                         @foreach ($permissions as $permission)
                             <option value="{{ $permission->id }}" @selected(old('permission_id', $user->permission->id) == $permission->id)>

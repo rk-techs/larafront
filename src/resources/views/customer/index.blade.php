@@ -32,7 +32,7 @@
                                 <input type="date" class="input-field u-w-136">
                                 <span class="u-mx-1">~</span>
                                 <input type="date" class="input-field u-mr-2 u-w-136">
-                                <select name="" id="" class="input-field u-w-96">
+                                <select name="" id="" class="form-select u-w-96">
                                     <option value="">今日</option>
                                     <option selected value="">今月</option>
                                     <option value="">今年</option>
