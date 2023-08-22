@@ -4,7 +4,7 @@
   background-color: var(--header-color);
   color: var(--white);
   height: var(--header-height);
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: var(--z-index-modal);
