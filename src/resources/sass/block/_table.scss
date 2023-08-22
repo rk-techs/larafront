@@ -7,7 +7,7 @@
     overflow-x: scroll;
     overflow-y: scroll;
     position: relative;
-    max-height: 90vh;
+    max-height: calc(100vh - var(--header-height) - 32px);
   }
 }
 
