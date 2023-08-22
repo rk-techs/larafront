@@ -158,6 +158,11 @@
 .layout-collapse-header {
   background-color: var(--header-color);
   color: var(--white);
+  opacity: 0.9;
+  position: fixed;
+  top: var(--header-height);
+  width: 100%;
+  z-index: var(--z-index-header);
 }
 
 .header-collapse-container {
@@ -166,6 +171,7 @@
   &.visible {
     display: block;
     padding: 0 24px 24px 24px;
+    height: 100vh;
 
     @include pc-screen() {
       display: none;
