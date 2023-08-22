@@ -1,1 +1,1 @@
-<div id="pageMask" class="page-mask"></div>
+<div id="{{ $maskId }}" class="layout-mask"></div>

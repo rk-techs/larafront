@@ -50,7 +50,7 @@
             <span id="headerMobileMenuSymbol" class="material-symbols-outlined">menu</span>
         </div>
     </div>
-
+    @include('components.mask', ['maskId' => 'headerMask'])
 </header>
 
 {{-- Collapse Menu on Mobile --}}

@@ -25,20 +25,20 @@ headerMobileMenuTrigger.addEventListener('click', function () {
 ---------------------------------------
 */
 const htmlBody  = document.body;
-const pageMask  = document.getElementById('pageMask');
+const headerMask  = document.getElementById('headerMask');
 
 const userInfoModalTrigger = document.getElementById('userInfoModalTrigger');
 const userInfoModal        = document.getElementById('userInfoModal');
 
 userInfoModalTrigger.addEventListener('click', () => {
   userInfoModal.classList.add('show');
-  pageMask.classList.add('show');
+  headerMask.classList.add('show');
   htmlBody.classList.add('modal-open');
 });
 
-pageMask.addEventListener('click', () => {
+headerMask.addEventListener('click', () => {
   userInfoModal.classList.remove('show');
-  pageMask.classList.remove('show');
+  headerMask.classList.remove('show');
   htmlBody.classList.remove('modal-open');
 });
 

@@ -18,7 +18,7 @@
 
     @yield('content')
 
-    @include('components.mask')
+    @include('components.mask', ['maskId' => 'pageMask'])
 
     @stack('script')
 </body>
