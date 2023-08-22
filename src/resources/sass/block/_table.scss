@@ -6,13 +6,15 @@
   &.is-scrollable {
     overflow-x: scroll;
     overflow-y: scroll;
+    position: relative;
     max-height: 90vh;
   }
 }
 
 .table {
   background-color: var(--white);
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   text-align: left;
   width: 100%;
 
@@ -25,23 +27,20 @@
   background-color: var(--gray-medium);
   position: sticky;
   top: 0;
+  z-index: 200;
 }
 
 .th-cell {
   border-right: 1px solid var(--gray-light);
+  border-bottom: 1px solid var(--gray-medium);
   font-weight: bold;
   padding: 8px 16px;
   overflow-wrap: break-word;
 }
 
-.table-row {
-  &:not(:last-child) {
-    border-bottom: 1px solid var(--gray-medium);
-  }
-}
-
 .td-cell {
   border-right: 1px solid var(--gray-light);
+  border-bottom: 1px solid var(--gray-medium);
   padding: 8px 16px;
   overflow-wrap: break-word;
 }
@@ -50,6 +49,7 @@
 -------------------------*/
 .table {
   border-radius: 4px;
+
   &-header {
     .table-row {
       .th-cell {
@@ -99,6 +99,22 @@
     @include pc-screen() {
       display: block;
     }
+  }
+}
+
+.th-cell,
+.td-cell {
+  &.col-fixed {
+    background-color: var(--white);
+    left: 0;
+    position: sticky;
+    z-index: 100;
+  }
+}
+
+.th-cell {
+  &.col-fixed {
+    background-color: var(--gray-medium);
   }
 }
 
