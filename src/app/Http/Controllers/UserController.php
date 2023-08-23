@@ -85,7 +85,10 @@ class UserController extends Controller
 
         return redirect()
             ->route('user.index')
-            ->with('success', '登録しました。');
+            ->with([
+                'action'  => 'success',
+                'message' => "ID:{$user->id}を登録しました。"
+            ]);
     }
 
     /**
@@ -97,7 +100,9 @@ class UserController extends Controller
             $user = User::findOrFail($id);
         } catch (ModelNotFoundException $e) {
             Log::error($e->getMessage() . ' in UserController');
-            return redirect()->route('user.index')->with('error', 'User not found...');
+            return redirect()
+                ->route('user.index')
+                ->with(['action' => 'error', 'message' => 'User not found...']);
         }
 
         return view('user.edit', [
@@ -116,7 +121,9 @@ class UserController extends Controller
             $user = User::findOrFail($id);
         } catch (ModelNotFoundException $e) {
             Log::error($e->getMessage() . ' in UserController');
-            return redirect()->route('user.index')->with('error', 'User not found...');
+            return redirect()
+                ->route('user.index')
+                ->with(['action' => 'error', 'message' => 'User not found...']);
         }
 
         $user->update([
@@ -137,7 +144,10 @@ class UserController extends Controller
 
         return redirect()
             ->route('user.index')
-            ->with('success', '更新しました。');
+            ->with([
+                'action'  => 'success',
+                'message' => "ID:{$user->id}を更新しました。"
+            ]);
     }
 
     /**
@@ -149,7 +159,9 @@ class UserController extends Controller
             $user = User::findOrFail($id);
         } catch (ModelNotFoundException $e) {
             Log::error($e->getMessage() . ' in UserController');
-            return redirect()->route('user.index')->with('error', 'User not found...');
+            return redirect()
+                ->route('user.index')
+                ->with(['action' => 'error', 'message' => 'User not found...']);
         }
 
         $user->employee->delete();
@@ -157,6 +169,9 @@ class UserController extends Controller
 
         return redirect()
             ->route('user.index')
-            ->with('deleted', '削除しました。');
+            ->with([
+                'action'  => 'deleted',
+                'message' => "ID:{$user->id}を削除しました。"
+            ]);
     }
 }

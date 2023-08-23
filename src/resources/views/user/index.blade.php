@@ -19,23 +19,7 @@
 
             @include('user.includes.index-search')
 
-            @if (session('success'))
-            <div class="alert alert-success">
-                {{ session('success') }}
-            </div>
-            @endif
-
-            @if (session('deleted'))
-            <div class="alert alert-deleted">
-                {{ session('deleted') }}
-            </div>
-            @endif
-
-            @if (session('error'))
-            <div class="alert alert-error">
-                {{ session('error') }}
-            </div>
-            @endif
+            @include('components.alert', ['action' => session('action')])
 
             @include('user.includes.index-table')
 
