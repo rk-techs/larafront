@@ -102,6 +102,8 @@
   }
 }
 
+/* Fixed cell
+-------------------------*/
 .th-cell,
 .td-cell {
   &.col-fixed {
@@ -118,7 +120,7 @@
   }
 }
 
-/* Hover
+/* Hoverable row, cell
 -------------------------*/
 .table-row {
   &.is-hoverable {
