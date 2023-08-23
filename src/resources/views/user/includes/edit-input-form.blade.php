@@ -80,4 +80,35 @@
 
         </div>
     </div>
+
+    <div class="input-form-block">
+        <div class="input-form-body">
+            <label class="form-label"><span class="label-txt">パスワードを変更する場合のみ入力</span></label>
+            <div class="row">
+                <div class="col">
+                    <label for="userPasswordInput" class="form-label">
+                        <span class="label-txt">Password</span>
+                    </label>
+                    <input id="userPasswordInput" type="password"
+                        class="input-field @error('password'){{ 'is-invalid' }}@enderror" name="password">
+                    @error('password')
+                        <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="userPasswordConfirmationInput" class="form-label">
+                        <span class="label-txt">Password 再確認</span>
+                    </label>
+                    <input id="userPasswordConfirmationInput" type="password" class="input-field"
+                        name="password_confirmation" autocomplete="new-password" placeholder="確認">
+                    @error('password_confirmation')
+                        <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
+                </div>
+            </div>
+        </div>
+    </div>
 </form>

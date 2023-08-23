@@ -134,6 +134,10 @@ class UserController extends Controller
             'email'         => $inputs['email'],
         ]);
 
+        if ($inputs['password']) {
+            $user->update(['password' => $inputs['password']]);
+        }
+
         $user->employee->update([
             'user_id'       => $user->id,
             'mobile_number' => $inputs['mobile_number'],
