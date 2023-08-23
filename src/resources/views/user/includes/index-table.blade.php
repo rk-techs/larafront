@@ -16,7 +16,7 @@
         </thead>
         <tbody class="table-body">
             @foreach ($users as $user)
-            <tr class="table-row">
+            <tr class="table-row is-hoverable">
                 <td class="td-cell col-fixed">
                     <a href="{{ route('user.edit', ['id' => $user->id]) }}" class="btn-sm">編集</a>
                 </td>
