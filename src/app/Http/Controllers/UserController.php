@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SearchUserRequest;
 use App\Http\Requests\StoreUserRequest;
 use App\Http\Requests\UpdateUserRequest;
 use App\Models\Employee;
 use App\Models\Permission;
 use App\Models\User;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
 
@@ -17,15 +17,8 @@ class UserController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(Request $request)
+    public function index(SearchUserRequest $request)
     {
-        $request->validate([
-            'id' => 'nullable|integer|min:1',
-            'keyword' => 'nullable|string|max:255',
-            'sortField' => 'nullable|in:id,name,created_at',
-            'sortType'  => 'nullable|in:asc,desc',
-        ]);
-
         $idSearch      = $request->get('id');
         $keywordSearch = $request->get('keyword');
         $sortField     = $request->get('sortField');
