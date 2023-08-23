@@ -39,7 +39,7 @@ class UserController extends Controller
 
         if ($keywordSearch) {
             $users = $users->where('name', 'like', "%{$keywordSearch}%")
-                           ->orWhere('email', 'like', "%{$keywordSearch}%");
+                ->orWhere('email', 'like', "%{$keywordSearch}%");
         }
 
         if ($sortField && $sortType) {
@@ -75,7 +75,6 @@ class UserController extends Controller
             'name'          => $inputs['name'],
             'email'         => $inputs['email'],
             'password'      => Hash::make($inputs['password']),
-
         ]);
 
         Employee::create([
@@ -85,16 +84,8 @@ class UserController extends Controller
         ]);
 
         return redirect()
-                ->route('user.index')
-                ->with('success', '登録しました。');
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
+            ->route('user.index')
+            ->with('success', '登録しました。');
     }
 
     /**
@@ -111,7 +102,7 @@ class UserController extends Controller
 
         return view('user.edit', [
             'permissions' => Permission::all(),
-            'user' => $user,
+            'user'        => $user,
         ]);
     }
 
@@ -145,8 +136,8 @@ class UserController extends Controller
         ]);
 
         return redirect()
-                ->route('user.index')
-                ->with('success', '更新しました。');
+            ->route('user.index')
+            ->with('success', '更新しました。');
     }
 
     /**
@@ -165,7 +156,7 @@ class UserController extends Controller
         $user->delete();
 
         return redirect()
-        ->route('user.index')
-        ->with('deleted', '削除しました。');
+            ->route('user.index')
+            ->with('deleted', '削除しました。');
     }
 }
