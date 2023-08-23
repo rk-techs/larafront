@@ -3,6 +3,8 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasOne;
@@ -60,5 +62,36 @@ class User extends Authenticatable
     public function employee(): HasOne
     {
         return $this->hasOne(Employee::class);
+    }
+
+    /*
+    |--------------------------------------------------------------------------
+    | Local Scopes
+    |--------------------------------------------------------------------------
+    |
+    */
+    public function scopeSearchById(Builder $query, ?int $id): Builder
+    {
+        if ($id) {
+            return $query->where('id', $id);
+        }
+        return $query;
+    }
+
+    public function scopeSearchByKeyword(Builder $query, ?string $keyword): Builder
+    {
+        if ($keyword) {
+            return $query->where('name', 'like', "%{$keyword}%")
+                ->orWhere('email', 'like', "%{$keyword}%");
+        }
+        return $query;
+    }
+
+    public function scopeOrderByField(Builder $query, ?string $sortField, ?string $sortType): Builder
+    {
+        if ($sortField && $sortType) {
+            return $query->orderBy($sortField, $sortType);
+        }
+        return $query;
     }
 }

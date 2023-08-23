@@ -19,28 +19,13 @@ class UserController extends Controller
      */
     public function index(SearchUserRequest $request)
     {
-        $idSearch      = $request->get('id');
-        $keywordSearch = $request->get('keyword');
-        $sortField     = $request->get('sortField');
-        $sortType      = $request->get('sortType');
+        $usersQuery = User::query()
+            ->searchById($request->get('id'))
+            ->searchByKeyword($request->get('keyword'))
+            ->orderByField($request->get('sortField'), $request->get('sortType'));
 
-        $users = User::query();
-
-        if ($idSearch) {
-            $users = $users->where('id', $idSearch);
-        }
-
-        if ($keywordSearch) {
-            $users = $users->where('name', 'like', "%{$keywordSearch}%")
-                ->orWhere('email', 'like', "%{$keywordSearch}%");
-        }
-
-        if ($sortField && $sortType) {
-            $users = $users->orderBy($sortField, $sortType);
-        }
-
-        $count = $users->count();
-        $users = $users->simplePaginate(50)->withQueryString();;
+        $count = $usersQuery->count();
+        $users = $usersQuery->simplePaginate(50)->withQueryString();
 
         return view('user.index', ['users' => $users, 'count' => $count]);
     }
